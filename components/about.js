@@ -8,8 +8,8 @@ export const about = `
                 <p>Our certified engineers ensure seamless 24/7 service delivery through self-service solutions, empowering financial institutions to meet customer needs. Integrating technology for sustainable growth.</p>
             </div>
             <div class="who-image">
-                <!-- Server Room Image -->
-                <img src="https://images.unsplash.com/photo-1558494949-ef526b0042a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Technology Infrastructure" onerror="this.src='https://via.placeholder.com/500x400?text=Tech+Infrastructure'">
+                <!-- Isometric Server Illustration (Original Design) -->
+                <img src="https://i0.wp.com/mattech.co.tz/wp-content/uploads/2025/04/slider_img-1.png?w=650&ssl=1" alt="Technology Infrastructure" onerror="this.src='https://via.placeholder.com/500x400?text=Tech+Infrastructure'">
             </div>
         </div>
         
@@ -62,12 +62,6 @@ export const about = `
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Curved Bottom SVG -->
-    <div class="curve-bottom">
-        <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
-            <path fill="#ffffff" fill-opacity="1" d="M0,224L80,213.3C160,203,320,181,480,181.3C640,181,800,203,960,213.3C1120,224,1280,224,1360,224L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
-        </svg>
-    </div>
+    </div>   
 </section>
 `;
