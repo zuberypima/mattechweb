@@ -6,6 +6,7 @@ export default {
             input: {
                 main: 'index.html',
                 hardware: 'hardware-solutions.html',
+                software: 'software-solutions.html',
                 loans: 'loan-management.html',
                 onboarding: 'customer-onboarding.html',
                 transactions: 'transaction-processing.html',

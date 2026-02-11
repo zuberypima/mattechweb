@@ -47,20 +47,20 @@ export const header = `
                                 <div id="software" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="#">Digital Transformation Solutions</a>
-                                            <a href="#">Office Automation & Productivity Tools</a>
-                                            <a href="#">Cybersecurity & Compliance Software</a>
-                                            <a href="#">Networking & Cloud Solutions</a>
+                                            <a href="software-solutions.html#digital">Digital Transformation Solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(AI, IoT, Cloud Computing, Automation)</span></a>
+                                            <a href="software-solutions.html#office">Office Automation & Productivity Tools <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Microsoft 365, Google Workspace, Zoho)</span></a>
+                                            <a href="software-solutions.html#security">Cybersecurity & Compliance Software <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Antivirus, SIEM, Endpoint Protection)</span></a>
+                                            <a href="software-solutions.html#cloud">Networking & Cloud Solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(AWS, Azure, Google Cloud)</span></a>
                                         </div>
                                         <div class="dropdown-column">
-                                            <a href="#">Enterprise E-solutions (ERP, CRM)</a>
-                                            <a href="#">Microsoft Office Suite</a>
-                                            <a href="#">Queue Management Systems</a>
+                                            <a href="software-solutions.html#enterprise">Enterprise E-solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(ERP, CRM, SCM - SAP, Oracle, MS Dynamics)</span></a>
+                                            <a href="software-solutions.html#msoffice">Microsoft Office Suite <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Word, Excel, PowerPoint, Outlook, Teams)</span></a>
+                                            <a href="software-solutions.html#queue">Queue Management Systems <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Electronic Ticketing, Automated Queuing)</span></a>
                                         </div>
                                         <div class="dropdown-column">
-                                            <a href="#">Business Intelligence & Data Analytics</a>
-                                            <a href="#">Custom Software Development</a>
-                                            <a href="#">ERP & CRM Solutions</a>
+                                            <a href="software-solutions.html#bi">Business Intelligence & Data Analytics <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Power BI, Tableau, SAS, Qlik)</span></a>
+                                            <a href="software-solutions.html#custom">Custom Software Development <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Web & Mobile Apps, AI Integration)</span></a>
+                                            <a href="software-solutions.html#crm">ERP & CRM Solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(SAP, Salesforce, Odoo, HubSpot)</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -323,6 +323,28 @@ export const header = `
                                     </div>
                                 </div>
 
+                                <!-- Software Content -->
+                                <div id="software" class="sector-content">
+                                    <div class="dropdown-row">
+                                        <div class="dropdown-column">
+                                            <a href="software-solutions.html#digital">Digital Transformation Solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(AI, IoT, Cloud Computing, Automation)</span></a>
+                                            <a href="software-solutions.html#office">Office Automation & Productivity Tools <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Microsoft 365, Google Workspace, Zoho)</span></a>
+                                            <a href="software-solutions.html#security">Cybersecurity & Compliance Software <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Antivirus, SIEM, Endpoint Protection)</span></a>
+                                            <a href="software-solutions.html#cloud">Networking & Cloud Solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(AWS, Azure, Google Cloud)</span></a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="software-solutions.html#enterprise">Enterprise E-solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(ERP, CRM, SCM - SAP, Oracle, MS Dynamics)</span></a>
+                                            <a href="software-solutions.html#msoffice">Microsoft Office Suite <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Word, Excel, PowerPoint, Outlook, Teams)</span></a>
+                                            <a href="software-solutions.html#queue">Queue Management Systems <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Electronic Ticketing, Automated Queuing)</span></a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="software-solutions.html#bi">Business Intelligence & Data Analytics <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Power BI, Tableau, SAS, Qlik)</span></a>
+                                            <a href="software-solutions.html#custom">Custom Software Development <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Web & Mobile Apps, AI Integration)</span></a>
+                                            <a href="software-solutions.html#crm">ERP & CRM Solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(SAP, Salesforce, Odoo, HubSpot)</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <!-- Installation & Maintenance -->
                                 <div id="services-install" class="sector-content">
                                     <div class="dropdown-row">
@@ -380,7 +402,7 @@ export const header = `
 
                 <li><a href="#products">Products</a></li>
                 <li><a href="#about">About Us</a></li>
-                <li><a href="#contact" class="btn">Contact Us</a></li>
+                <li><a href="#contact" class="btn btn-contact">Contact Us</a></li>
             </ul>
             <div class="hamburger">
                 <i class="fas fa-bars"></i>
