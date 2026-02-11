@@ -5,6 +5,7 @@ import { about } from './components/about.js';
 import { overview } from './components/company-overview.js';
 import { services } from './components/services.js';
 import { stats } from './components/stats.js';
+import { partners } from './components/partners.js';
 import { footer } from './components/footer.js';
 
 document.querySelector('#app').innerHTML = `
@@ -14,6 +15,7 @@ document.querySelector('#app').innerHTML = `
   ${overview}
   ${services}
   ${stats}
+  ${partners}
   ${footer}
 `;
 

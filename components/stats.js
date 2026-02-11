@@ -38,14 +38,6 @@ export const stats = `
         </div>
     </div>
     
-    <div class="container" style="margin-top: 80px;">
-        <h2>Our Clients</h2>
-        <div class="stats-grid client-grid" style="align-items: center; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));">
-             <img src="https://mattech.co.tz/wp-content/uploads/2025/04/logo.svg" alt="Client Logo" class="client-logo">
-             <img src="https://i0.wp.com/mattech.co.tz/wp-content/uploads/2025/04/mwanga.png?fit=650%2C180&ssl=1" alt="Mwanga" class="client-logo">
-             <img src="https://i0.wp.com/mattech.co.tz/wp-content/uploads/2025/04/idoPBMKf4c_logos.png?fit=300%2C241&ssl=1" alt="Client" class="client-logo">
-             <img src="https://i0.wp.com/mattech.co.tz/wp-content/uploads/2025/04/maendeleo-logo-pngg.png?fit=1024%2C741&ssl=1" alt="Maendeleo Bank" class="client-logo">
-        </div>
-    </div>
+    
 </section>
 `;

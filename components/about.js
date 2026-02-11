@@ -8,8 +8,8 @@ export const about = `
                 <p>Our certified engineers ensure seamless 24/7 service delivery through self-service solutions, empowering financial institutions to meet customer needs. Integrating technology for sustainable growth.</p>
             </div>
             <div class="who-image">
-                <!-- Isometric illustration placeholder/image -->
-                <img src="https://i0.wp.com/mattech.co.tz/wp-content/uploads/2025/04/server-isometric.png?w=600&ssl=1" alt="Technology Infrastructure" onerror="this.src='https://via.placeholder.com/500x400?text=Tech+Infrastructure'">
+                <!-- Server Room Image -->
+                <img src="https://images.unsplash.com/photo-1558494949-ef526b0042a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Technology Infrastructure" onerror="this.src='https://via.placeholder.com/500x400?text=Tech+Infrastructure'">
             </div>
         </div>
         

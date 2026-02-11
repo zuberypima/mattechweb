@@ -27,12 +27,18 @@ export const header = `
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
                                             <a href="#">Workstations & Servers</a>
-                                            <a href="#">Data Storage & Backup</a>
-                                            <a href="#">IP Telephony</a>
+                                            <a href="#">Data Storage & Backup Solutions</a>
+                                            <a href="#">IP Telephony & Video Conferencing Systems</a>
                                         </div>
                                         <div class="dropdown-column">
-                                            <a href="#">Data Centre</a>
-                                            <a href="#">Network & Security</a>
+                                            <a href="#">Data Centre & Disaster Recovery Solutions</a>
+                                            <a href="#">Network & Security Devices</a>
+                                            <a href="#">Scanners & Digital Signage</a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="#">Surveillance & Access Control Systems</a>
+                                            <a href="#">IoT Devices & Smart Technologies</a>
+                                            <a href="#">Enterprise Computing Solutions</a>
                                         </div>
                                     </div>
                                 </div>
@@ -41,17 +47,20 @@ export const header = `
                                 <div id="software" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="#">Digital Transformation</a>
-                                            <a href="#">Office Productivity Tools</a>
-                                            <a href="#">Cybersecurity & Compliance</a>
+                                            <a href="#">Digital Transformation Solutions</a>
+                                            <a href="#">Office Automation & Productivity Tools</a>
+                                            <a href="#">Cybersecurity & Compliance Software</a>
+                                            <a href="#">Networking & Cloud Solutions</a>
                                         </div>
                                         <div class="dropdown-column">
-                                            <a href="#">Networking & Cloud</a>
-                                            <a href="#">Enterprise E-solutions</a>
+                                            <a href="#">Enterprise E-solutions (ERP, CRM)</a>
                                             <a href="#">Microsoft Office Suite</a>
+                                            <a href="#">Queue Management Systems</a>
                                         </div>
-                                         <div class="dropdown-column">
-                                            <a href="#">Queue Management</a>
+                                        <div class="dropdown-column">
+                                            <a href="#">Business Intelligence & Data Analytics</a>
+                                            <a href="#">Custom Software Development</a>
+                                            <a href="#">ERP & CRM Solutions</a>
                                         </div>
                                     </div>
                                 </div>
@@ -66,37 +75,87 @@ export const header = `
                         <div class="sector-container">
                             <!-- Left Sidebar-->
                             <ul class="sector-tabs">
-                                <li class="active" data-tab="banking-core">Core Banking</li>
-                                <li data-tab="banking-fintech">FinTech & Security</li>
+                                <li class="active" data-tab="banking-fintech">Fintech Solutions</li>
+                                <li data-tab="banking-payments">Payment Solutions</li>
+                                <li data-tab="banking-cash">Cash Management Solutions</li>
+                                <li data-tab="banking-cx">Customer Experience Solutions</li>
+                                <li data-tab="banking-shared">Shared Banking Solutions</li>
                             </ul>
 
                             <!-- Right Content Area -->
                             <div class="sector-content-area">
-                                <!-- Core Banking Content -->
-                                <div id="banking-core" class="sector-content active">
+                                <!-- Fintech Solutions -->
+                                <div id="banking-fintech" class="sector-content active">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <h3>Core Banking</h3>
-                                            <a href="transaction-processing.html">Transaction Processing</a>
-                                            <a href="loan-management.html">Loan Management</a>
-                                            <a href="customer-onboarding.html">Customer Onboarding</a>
+                                            <a href="#">Open API & Integration Services</a>
+                                            <a href="#">Robotic Process Automation (RPA)</a>
+                                            <a href="blockchain-solutions.html">Blockchain & Distributed Ledger</a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="#">Artificial Intelligence (AI) in Finance</a>
+                                            <a href="compliance-tools.html">Regulatory Technology (RegTech)</a>
+                                            <a href="#">Core Banking System (CBS) Modules</a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="#">Insurance Tech Solutions</a>
+                                            <a href="#">Digital Lending & Credit Scoring</a>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!-- FinTech Content -->
-                                <div id="banking-fintech" class="sector-content">
+                                <!-- Payment Solutions -->
+                                <div id="banking-payments" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <h3>FinTech</h3>
-                                            <a href="mobile-wallets.html">Mobile Wallets</a>
-                                            <a href="payment-gateways.html">Payment Gateways</a>
-                                            <a href="blockchain-solutions.html">Blockchain Solutions</a>
+                                            <a href="#">Point of Sale (POS) Systems</a>
+                                            <a href="#">Mobile Banking Applications</a>
                                         </div>
                                         <div class="dropdown-column">
-                                            <h3>Security</h3>
-                                            <a href="fraud-detection.html">Fraud Detection</a>
-                                            <a href="compliance-tools.html">Compliance Tools</a>
+                                            <a href="mobile-wallets.html">Mobile Wallet & Digital Payments</a>
+                                            <a href="#">Self-Service KIOSK Solutions</a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="#">Secure Card Production & Management</a>
+                                            <a href="#">Cross-Border Payment Solutions</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Cash Management Solutions -->
+                                <div id="banking-cash" class="sector-content">
+                                    <div class="dropdown-row">
+                                        <div class="dropdown-column">
+                                            <a href="#">Currency Verifies Machines</a>
+                                            <a href="#">Automated Teller Machines (ATMs)</a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="#">Cash Banding & Wrapping Machines</a>
+                                            <a href="#">Smart Cash Deposit & Recycling Machines</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Customer Experience Solutions -->
+                                <div id="banking-cx" class="sector-content">
+                                    <div class="dropdown-row">
+                                        <div class="dropdown-column">
+                                            <a href="#">Omni-channel Contact Centre Solutions</a>
+                                            <a href="#">Branch Automation & Self-Service Banking</a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="#">Mobile Banking Branches</a>
+                                            <a href="#">Customer Relationship Management (CRM)</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Shared Banking Solutions -->
+                                <div id="banking-shared" class="sector-content">
+                                    <div class="dropdown-row">
+                                        <div class="dropdown-column">
+                                            <a href="#">Banking as a Service (BaaS)</a>
+                                            <a href="#">Cloud-Based Financial Solutions</a>
                                         </div>
                                     </div>
                                 </div>
@@ -111,30 +170,64 @@ export const header = `
                         <div class="sector-container">
                             <!-- Left Sidebar-->
                             <ul class="sector-tabs">
-                                <li class="active" data-tab="telecom-infra">Infrastructure</li>
-                                <li data-tab="telecom-services">Services</li>
+                                <li class="active" data-tab="telecom-domain">Domain & Hosting</li>
+                                <li data-tab="telecom-monitoring">Network Monitoring</li>
+                                <li data-tab="telecom-internet">Internet Services</li>
+                                <li data-tab="telecom-connectivity">Connectivity Solutions</li>
+                                <li data-tab="telecom-devices">Telecom Devices</li>
                             </ul>
 
                             <!-- Right Content Area -->
                             <div class="sector-content-area">
-                                <!-- Infrastructure Content -->
-                                <div id="telecom-infra" class="sector-content active">
+                                <!-- Domain & Hosting -->
+                                <div id="telecom-domain" class="sector-content active">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="fiber-optics.html">Fiber Optics</a>
-                                            <a href="5g-networks.html">5G Networks</a>
-                                            <a href="tower-maintenance.html">Tower Maintenance</a>
+                                            <a href="#">Domain & Hosting Services</a>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!-- Services Content -->
-                                <div id="telecom-services" class="sector-content">
+                                <!-- Network Monitoring -->
+                                <div id="telecom-monitoring" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="#">VoIP Solutions</a>
-                                            <a href="#">Satellite Internet</a>
-                                            <a href="#">Network Monitoring</a>
+                                            <a href="#">Network & Devices Monitoring Solutions</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Internet Services -->
+                                <div id="telecom-internet" class="sector-content">
+                                    <div class="dropdown-row">
+                                        <div class="dropdown-column">
+                                            <a href="#">Indoor & Outdoor Internet Solutions</a>
+                                            <a href="#">Satellite Internet Solutions</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Connectivity Solutions -->
+                                <div id="telecom-connectivity" class="sector-content">
+                                    <div class="dropdown-row">
+                                        <div class="dropdown-column">
+                                            <a href="#">LAN, MAN & WAN Infrastructure</a>
+                                            <a href="fiber-optics.html">Fibre Optic Network Solutions</a>
+                                            <a href="5g-networks.html">5G & Wireless Connectivity</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Telecom Devices -->
+                                <div id="telecom-devices" class="sector-content">
+                                    <div class="dropdown-row">
+                                        <div class="dropdown-column">
+                                            <a href="#">Telecom Hardware & Smart Devices</a>
+                                            <a href="tower-maintenance.html">Tower Infrastructure & Maintenance</a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="#">Other Telecom Solutions</a>
+                                            <a href="#">Data Transmission & Broadcasting</a>
                                         </div>
                                     </div>
                                 </div>
@@ -144,34 +237,45 @@ export const header = `
                 </li>
 
                 <li class="dropdown mattech-mega-menu">
-                    <a href="#">Energy <i class="fas fa-chevron-down"></i></a>
+                    <a href="#">Energy & Utilities <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content mattech-mega-content">
                         <div class="sector-container">
                             <!-- Left Sidebar-->
                             <ul class="sector-tabs">
-                                <li class="active" data-tab="energy-solar">Solar Power</li>
-                                <li data-tab="energy-smart">Smart Grid</li>
+                                <li class="active" data-tab="energy-power">Power Solutions</li>
+                                <li data-tab="energy-oil-gas">Oil & Gas Technologies</li>
+                                <li data-tab="energy-utility">Utility Management</li>
                             </ul>
 
                             <!-- Right Content Area -->
                             <div class="sector-content-area">
-                                <!-- Solar Power Content -->
-                                <div id="energy-solar" class="sector-content active">
+                                <!-- Power Solutions -->
+                                <div id="energy-power" class="sector-content active">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="#">Commercial Solar Panels</a>
-                                            <a href="#">Inverters & Batteries</a>
-                                            <a href="#">Installation Services</a>
+                                            <a href="#">Renewable Energy & Backup Power Systems</a>
+                                            <a href="#">Smart Grid & Energy Management Solutions</a>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!-- Smart Grid Content -->
-                                <div id="energy-smart" class="sector-content">
+                                <!-- Oil & Gas Technologies -->
+                                <div id="energy-oil-gas" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="#">Smart Meters</a>
-                                            <a href="#">Grid Management Software</a>
+                                            <a href="#">Smart Fuel Pumps & Dispensing Systems</a>
+                                            <a href="#">Tank Management & Monitoring Solutions</a>
+                                            <a href="#">Pipeline & Asset Management Solutions</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Utility Management Solutions -->
+                                <div id="energy-utility" class="sector-content">
+                                    <div class="dropdown-row">
+                                        <div class="dropdown-column">
+                                            <a href="#">Water & Waste Management Technologies</a>
+                                            <a href="#">Smart Metering & Billing Systems</a>
                                         </div>
                                     </div>
                                 </div>
@@ -186,30 +290,86 @@ export const header = `
                         <div class="sector-container">
                             <!-- Left Sidebar-->
                             <ul class="sector-tabs">
-                                <li class="active" data-tab="services-consultancy">Consultancy</li>
-                                <li data-tab="services-support">Support</li>
+                                <li class="active" data-tab="services-consultancy">Consultancy & Advisory</li>
+                                <li data-tab="services-rnd">Research & Development (R&D)</li>
+                                <li data-tab="services-install">Installation & Maintenance</li>
+                                <li data-tab="services-support">Technical & Customer Support</li>
+                                <li data-tab="services-design">System Design & Optimization</li>
+                                <li data-tab="services-paas">Project as a Service (PaaS)</li>
+                                <li data-tab="services-custom">Customized Services</li>
                             </ul>
 
                             <!-- Right Content Area -->
                             <div class="sector-content-area">
-                                <!-- Consultancy Content -->
+                                <!-- Consultancy & Advisory -->
                                 <div id="services-consultancy" class="sector-content active">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="#">IT Strategy</a>
+                                            <a href="#">Business Strategy</a>
                                             <a href="#">Digital Transformation</a>
-                                            <a href="#">Project Management</a>
+                                            <a href="#">IT Consulting</a>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!-- Support Content -->
+                                <!-- Research & Development -->
+                                <div id="services-rnd" class="sector-content">
+                                    <div class="dropdown-row">
+                                        <div class="dropdown-column">
+                                            <a href="#">Product Innovation</a>
+                                            <a href="#">Market Research</a>
+                                            <a href="#">Feasibility Studies</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Installation & Maintenance -->
+                                <div id="services-install" class="sector-content">
+                                    <div class="dropdown-row">
+                                        <div class="dropdown-column">
+                                            <a href="#">Hardware & Software Deployment</a>
+                                            <a href="#">Annual Maintenance</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Technical & Customer Support -->
                                 <div id="services-support" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="#">24/7 Helpdesk</a>
-                                            <a href="#">On-site Maintenance</a>
-                                            <a href="#">Training & Workshops</a>
+                                            <a href="#">Helpdesk</a>
+                                            <a href="#">SLA-based Support</a>
+                                            <a href="#">Remote Assistance</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- System Design & Optimization -->
+                                <div id="services-design" class="sector-content">
+                                    <div class="dropdown-row">
+                                        <div class="dropdown-column">
+                                            <a href="#">Network Design</a>
+                                            <a href="#">Security Optimization</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Project as a Service -->
+                                <div id="services-paas" class="sector-content">
+                                    <div class="dropdown-row">
+                                        <div class="dropdown-column">
+                                            <a href="#">Project Management & Execution</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Customized Services -->
+                                <div id="services-custom" class="sector-content">
+                                    <div class="dropdown-row">
+                                        <div class="dropdown-column">
+                                            <a href="#">IT Training & Capacity Building</a>
+                                            <a href="#">Compliance & Risk Management Services</a>
+                                            <a href="#">Digital Marketing & Branding Solutions</a>
                                         </div>
                                     </div>
                                 </div>
