@@ -28,26 +28,30 @@ if (hamburger) {
 }
 
 // Tabbed Mega Menu Logic
-const sectorTabs = document.querySelectorAll('.sector-tabs li');
-const sectorContents = document.querySelectorAll('.sector-content');
+const sectorContainers = document.querySelectorAll('.sector-container');
 
-if (sectorTabs.length > 0) {
-  sectorTabs.forEach(tab => {
-    tab.addEventListener('mouseover', () => {
-      // Remove active class from all tabs
-      sectorTabs.forEach(t => t.classList.remove('active'));
-      // Add active class to current tab
-      tab.classList.add('active');
+if (sectorContainers.length > 0) {
+  sectorContainers.forEach(container => {
+    const tabs = container.querySelectorAll('.sector-tabs li');
+    const contents = container.querySelectorAll('.sector-content');
 
-      // Hide all content areas
-      sectorContents.forEach(content => content.classList.remove('active'));
+    tabs.forEach(tab => {
+      tab.addEventListener('mouseover', () => {
+        // Remove active class from tabs in THIS container only
+        tabs.forEach(t => t.classList.remove('active'));
+        // Add active class to hovered tab
+        tab.classList.add('active');
 
-      // Show corresponding content
-      const targetId = tab.getAttribute('data-tab');
-      const targetContent = document.getElementById(targetId);
-      if (targetContent) {
-        targetContent.classList.add('active');
-      }
+        // Hide contents in THIS container only
+        contents.forEach(c => c.classList.remove('active'));
+
+        // Show corresponding content content
+        const targetId = tab.getAttribute('data-tab');
+        const targetContent = document.getElementById(targetId);
+        if (targetContent) {
+          targetContent.classList.add('active');
+        }
+      });
     });
   });
 }
