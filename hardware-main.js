@@ -1,11 +1,10 @@
-import './styles/main.css';
 import { header } from './components/header.js';
 import { footer } from './components/footer.js';
-import { loanContent } from './components/loan-content.js';
+import { hardwareContent } from './components/hardware-content.js';
 
 document.querySelector('#app').innerHTML = `
   ${header}
-  ${loanContent}
+  ${hardwareContent}
   ${footer}
 `;
 

@@ -26,19 +26,19 @@ export const header = `
                                 <div id="hardware" class="sector-content active">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="#">Workstations & Servers</a>
-                                            <a href="#">Data Storage & Backup Solutions</a>
-                                            <a href="#">IP Telephony & Video Conferencing Systems</a>
+                                            <a href="hardware-solutions.html#workstations">Workstations & Servers <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Dell, HP, Lenovo, IBM)</span></a>
+                                            <a href="hardware-solutions.html#storage">Data Storage & Backup Solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(NAS, SAN, Cloud Storage, Backup Appliances)</span></a>
+                                            <a href="hardware-solutions.html#telephony">IP Telephony & Video Conferencing Systems <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Cisco, Avaya, Zoom, Polycom)</span></a>
                                         </div>
                                         <div class="dropdown-column">
-                                            <a href="#">Data Centre & Disaster Recovery Solutions</a>
-                                            <a href="#">Network & Security Devices</a>
-                                            <a href="#">Scanners & Digital Signage</a>
+                                            <a href="hardware-solutions.html#datacenter">Data Centre & Disaster Recovery Solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(On-premise & Cloud-based DR)</span></a>
+                                            <a href="hardware-solutions.html#network">Network & Security Devices <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Firewalls, Switches, Routers - Cisco, Fortinet, Juniper)</span></a>
+                                            <a href="hardware-solutions.html#signage">Scanners & Digital Signage <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Barcode, Document Scanners, LED Displays)</span></a>
                                         </div>
                                         <div class="dropdown-column">
-                                            <a href="#">Surveillance & Access Control Systems</a>
-                                            <a href="#">IoT Devices & Smart Technologies</a>
-                                            <a href="#">Enterprise Computing Solutions</a>
+                                            <a href="hardware-solutions.html#surveillance">Surveillance & Access Control Systems <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(CCTV, Biometric Access, RFID)</span></a>
+                                            <a href="hardware-solutions.html#iot">IoT Devices & Smart Technologies <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Smart Sensors, Wearables, Home Automation)</span></a>
+                                            <a href="hardware-solutions.html#computing">Enterprise Computing Solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Virtualization, Cloud Computing, Edge Computing)</span></a>
                                         </div>
                                     </div>
                                 </div>
