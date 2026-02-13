@@ -29,7 +29,14 @@ export default {
                 satellite_internet: 'telecom-solutions/satellite-internet.html',
                 network_infrastructure: 'telecom-solutions/network-infrastructure.html',
                 smart_devices: 'telecom-solutions/smart-devices.html',
-                data_transmission: 'telecom-solutions/data-transmission.html'
+                data_transmission: 'telecom-solutions/data-transmission.html',
+                renewable: 'energy-utilities/renewable-energy.html',
+                smart_grid: 'energy-utilities/smart-grid.html',
+                fuel_pumps: 'energy-utilities/smart-fuel-pumps.html',
+                tank_mgmt: 'energy-utilities/tank-management.html',
+                pipeline_mgmt: 'energy-utilities/pipeline-management.html',
+                water_waste: 'energy-utilities/water-waste-management.html',
+                smart_metering: 'energy-utilities/smart-metering.html'
             }
         }
     },

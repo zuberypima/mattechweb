@@ -1,3 +1,6 @@
+import { initNavigation } from '../navigation.js';
+import { footer } from './footer.js';
+
 export const header = `
 <header>
     <div class="container">
@@ -257,8 +260,8 @@ export const header = `
                                 <div id="energy-power" class="sector-content active">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="#">Renewable Energy & Backup Power Systems</a>
-                                            <a href="#">Smart Grid & Energy Management Solutions</a>
+                                            <a href="/energy-utilities/renewable-energy.html">Renewable Energy & Backup Power Systems</a>
+                                            <a href="/energy-utilities/smart-grid.html">Smart Grid & Energy Management Solutions</a>
                                         </div>
                                     </div>
                                 </div>
@@ -267,9 +270,9 @@ export const header = `
                                 <div id="energy-oil-gas" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="#">Smart Fuel Pumps & Dispensing Systems</a>
-                                            <a href="#">Tank Management & Monitoring Solutions</a>
-                                            <a href="#">Pipeline & Asset Management Solutions</a>
+                                            <a href="/energy-utilities/smart-fuel-pumps.html">Smart Fuel Pumps & Dispensing Systems</a>
+                                            <a href="/energy-utilities/tank-management.html">Tank Management & Monitoring Solutions</a>
+                                            <a href="/energy-utilities/pipeline-management.html">Pipeline & Asset Management Solutions</a>
                                         </div>
                                     </div>
                                 </div>
@@ -278,8 +281,8 @@ export const header = `
                                 <div id="energy-utility" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="#">Water & Waste Management Technologies</a>
-                                            <a href="#">Smart Metering & Billing Systems</a>
+                                            <a href="/energy-utilities/water-waste-management.html">Water & Waste Management Technologies</a>
+                                            <a href="/energy-utilities/smart-metering.html">Smart Metering & Billing Systems</a>
                                         </div>
                                     </div>
                                 </div>
@@ -415,3 +418,18 @@ export const header = `
     </div>
 </header>
 `;
+
+export async function loadHeader() {
+    const headerContainer = document.getElementById('header-container');
+    if (headerContainer) {
+        headerContainer.innerHTML = header;
+        initNavigation();
+    }
+}
+
+export function loadFooter() {
+    const footerContainer = document.getElementById('footer-container');
+    if (footerContainer) {
+        footerContainer.innerHTML = footer;
+    }
+}
