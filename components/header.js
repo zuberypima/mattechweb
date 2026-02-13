@@ -3,12 +3,12 @@ export const header = `
     <div class="container">
         <nav>
             <div class="logo">
-                    <a href="index.html">
+                    <a href="/index.html">
                     <img src="https://i0.wp.com/mattech.co.tz/wp-content/uploads/2023/03/Mat-Tech-Logo.png?fit=2963%2C1205&ssl=1" alt="Mattech">
                 </a>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="/index.html">Home</a></li>
 
                 <li class="dropdown mattech-mega-menu">
                     <a href="#">ICT Solutions <i class="fas fa-chevron-down"></i></a>
@@ -26,19 +26,19 @@ export const header = `
                                 <div id="hardware" class="sector-content active">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="hardware-solutions.html#workstations">Workstations & Servers <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Dell, HP, Lenovo, IBM)</span></a>
-                                            <a href="hardware-solutions.html#storage">Data Storage & Backup Solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(NAS, SAN, Cloud Storage, Backup Appliances)</span></a>
-                                            <a href="hardware-solutions.html#telephony">IP Telephony & Video Conferencing Systems <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Cisco, Avaya, Zoom, Polycom)</span></a>
+                                            <a href="/hardware-solutions.html#workstations">Workstations & Servers <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Dell, HP, Lenovo, IBM)</span></a>
+                                            <a href="/hardware-solutions.html#storage">Data Storage & Backup Solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(NAS, SAN, Cloud Storage, Backup Appliances)</span></a>
+                                            <a href="/hardware-solutions.html#telephony">IP Telephony & Video Conferencing Systems <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Cisco, Avaya, Zoom, Polycom)</span></a>
                                         </div>
                                         <div class="dropdown-column">
-                                            <a href="hardware-solutions.html#datacenter">Data Centre & Disaster Recovery Solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(On-premise & Cloud-based DR)</span></a>
-                                            <a href="hardware-solutions.html#network">Network & Security Devices <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Firewalls, Switches, Routers - Cisco, Fortinet, Juniper)</span></a>
-                                            <a href="hardware-solutions.html#signage">Scanners & Digital Signage <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Barcode, Document Scanners, LED Displays)</span></a>
+                                            <a href="/hardware-solutions.html#datacenter">Data Centre & Disaster Recovery Solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(On-premise & Cloud-based DR)</span></a>
+                                            <a href="/hardware-solutions.html#network">Network & Security Devices <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Firewalls, Switches, Routers - Cisco, Fortinet, Juniper)</span></a>
+                                            <a href="/hardware-solutions.html#signage">Scanners & Digital Signage <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Barcode, Document Scanners, LED Displays)</span></a>
                                         </div>
                                         <div class="dropdown-column">
-                                            <a href="hardware-solutions.html#surveillance">Surveillance & Access Control Systems <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(CCTV, Biometric Access, RFID)</span></a>
-                                            <a href="hardware-solutions.html#iot">IoT Devices & Smart Technologies <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Smart Sensors, Wearables, Home Automation)</span></a>
-                                            <a href="hardware-solutions.html#computing">Enterprise Computing Solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Virtualization, Cloud Computing, Edge Computing)</span></a>
+                                            <a href="/hardware-solutions.html#surveillance">Surveillance & Access Control Systems <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(CCTV, Biometric Access, RFID)</span></a>
+                                            <a href="/hardware-solutions.html#iot">IoT Devices & Smart Technologies <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Smart Sensors, Wearables, Home Automation)</span></a>
+                                            <a href="/hardware-solutions.html#computing">Enterprise Computing Solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Virtualization, Cloud Computing, Edge Computing)</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -88,19 +88,19 @@ export const header = `
                                 <div id="banking-fintech" class="sector-content active">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="fintech-solutions/index.html"><strong>Fintech Solutions (Overview)</strong></a>
-                                            <a href="fintech-solutions/open-api-integration.html">Open API & Integration Services</a>
-                                            <a href="fintech-solutions/rpa-finance.html">Robotic Process Automation (RPA)</a>
-                                            <a href="fintech-solutions/blockchain-solutions.html">Blockchain & Distributed Ledger</a>
+                                            <a href="/fintech-solutions/index.html"><strong>Fintech Solutions (Overview)</strong></a>
+                                            <a href="/fintech-solutions/open-api-integration.html">Open API & Integration Services</a>
+                                            <a href="/fintech-solutions/rpa-finance.html">Robotic Process Automation (RPA)</a>
+                                            <a href="/fintech-solutions/blockchain-solutions.html">Blockchain & Distributed Ledger</a>
                                         </div>
                                         <div class="dropdown-column">
-                                            <a href="fintech-solutions/ai-finance.html">Artificial Intelligence (AI) in Finance</a>
-                                            <a href="fintech-solutions/compliance-tools.html">Regulatory Technology (RegTech)</a>
-                                            <a href="fintech-solutions/core-banking-modules.html">Core Banking System (CBS) Modules</a>
+                                            <a href="/fintech-solutions/ai-finance.html">Artificial Intelligence (AI) in Finance</a>
+                                            <a href="/fintech-solutions/compliance-tools.html">Regulatory Technology (RegTech)</a>
+                                            <a href="/fintech-solutions/core-banking-modules.html">Core Banking System (CBS) Modules</a>
                                         </div>
                                         <div class="dropdown-column">
-                                            <a href="fintech-solutions/insurance-tech.html">Insurance Tech Solutions</a>
-                                            <a href="fintech-solutions/digital-lending.html">Digital Lending & Credit Scoring</a>
+                                            <a href="/fintech-solutions/insurance-tech.html">Insurance Tech Solutions</a>
+                                            <a href="/fintech-solutions/digital-lending.html">Digital Lending & Credit Scoring</a>
                                         </div>
                                     </div>
                                 </div>
@@ -109,17 +109,17 @@ export const header = `
                                 <div id="banking-payments" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="payment-solutions/index.html"><strong>Payment Solutions (Overview)</strong></a>
-                                            <a href="payment-solutions/pos-systems.html">Point of Sale (POS) Systems</a>
-                                            <a href="payment-solutions/mobile-banking.html">Mobile Banking Applications</a>
+                                            <a href="/payment-solutions/index.html"><strong>Payment Solutions (Overview)</strong></a>
+                                            <a href="/payment-solutions/pos-systems.html">Point of Sale (POS) Systems</a>
+                                            <a href="/payment-solutions/mobile-banking.html">Mobile Banking Applications</a>
                                         </div>
                                         <div class="dropdown-column">
-                                            <a href="payment-solutions/mobile-wallets.html">Mobile Wallet & Digital Payments</a>
-                                            <a href="payment-solutions/kiosk-solutions.html">Self-Service KIOSK Solutions</a>
+                                            <a href="/payment-solutions/mobile-wallets.html">Mobile Wallet & Digital Payments</a>
+                                            <a href="/payment-solutions/kiosk-solutions.html">Self-Service KIOSK Solutions</a>
                                         </div>
                                         <div class="dropdown-column">
-                                            <a href="payment-solutions/secure-card.html">Secure Card Production & Management</a>
-                                            <a href="payment-solutions/cross-border-payments.html">Cross-Border Payment Solutions</a>
+                                            <a href="/payment-solutions/secure-card.html">Secure Card Production & Management</a>
+                                            <a href="/payment-solutions/cross-border-payments.html">Cross-Border Payment Solutions</a>
                                         </div>
                                     </div>
                                 </div>
@@ -128,13 +128,13 @@ export const header = `
                                 <div id="banking-cash" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="cash-management/index.html"><strong>Cash Management (Overview)</strong></a>
-                                            <a href="cash-management/currency-verifiers.html">Currency Verifies Machines</a>
-                                            <a href="cash-management/atms.html">Automated Teller Machines (ATMs)</a>
+                                            <a href="/cash-management/index.html"><strong>Cash Management (Overview)</strong></a>
+                                            <a href="/cash-management/currency-verifiers.html">Currency Verifies Machines</a>
+                                            <a href="/cash-management/atms.html">Automated Teller Machines (ATMs)</a>
                                         </div>
                                         <div class="dropdown-column">
-                                            <a href="cash-management/cash-banding.html">Cash Banding & Wrapping Machines</a>
-                                            <a href="cash-management/smart-deposit.html">Smart Cash Deposit & Recycling Machines</a>
+                                            <a href="/cash-management/cash-banding.html">Cash Banding & Wrapping Machines</a>
+                                            <a href="/cash-management/smart-deposit.html">Smart Cash Deposit & Recycling Machines</a>
                                         </div>
                                     </div>
                                 </div>
@@ -143,13 +143,13 @@ export const header = `
                                 <div id="banking-cx" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="customer-experience/index.html"><strong>Customer Experience (Overview)</strong></a>
-                                            <a href="customer-experience/omni-channel.html">Omni-channel Contact Centre Solutions</a>
-                                            <a href="customer-experience/branch-automation.html">Branch Automation & Self-Service Banking</a>
+                                            <a href="/customer-experience/index.html"><strong>Customer Experience (Overview)</strong></a>
+                                            <a href="/customer-experience/omni-channel.html">Omni-channel Contact Centre Solutions</a>
+                                            <a href="/customer-experience/branch-automation.html">Branch Automation & Self-Service Banking</a>
                                         </div>
                                         <div class="dropdown-column">
-                                            <a href="customer-experience/mobile-branches.html">Mobile Banking Branches</a>
-                                            <a href="customer-experience/crm-solutions.html">Customer Relationship Management (CRM)</a>
+                                            <a href="/customer-experience/mobile-branches.html">Mobile Banking Branches</a>
+                                            <a href="/customer-experience/crm-solutions.html">Customer Relationship Management (CRM)</a>
                                         </div>
                                     </div>
                                 </div>
@@ -158,9 +158,9 @@ export const header = `
                                 <div id="banking-shared" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="shared-banking/index.html"><strong>Shared Banking (Overview)</strong></a>
-                                            <a href="shared-banking/baas.html">Banking as a Service (BaaS)</a>
-                                            <a href="shared-banking/cloud-finance.html">Cloud-Based Financial Solutions</a>
+                                            <a href="/shared-banking/index.html"><strong>Shared Banking (Overview)</strong></a>
+                                            <a href="/shared-banking/baas.html">Banking as a Service (BaaS)</a>
+                                            <a href="/shared-banking/cloud-finance.html">Cloud-Based Financial Solutions</a>
                                         </div>
                                     </div>
                                 </div>
@@ -171,7 +171,7 @@ export const header = `
 
                 <li class="dropdown mattech-mega-menu">
                     <a href="#">Telecom <i class="fas fa-chevron-down"></i></a>
-                        <div class="dropdown-content mattech-mega-content">
+                    <div class="dropdown-content mattech-mega-content">
                         <div class="sector-container">
                             <!-- Left Sidebar-->
                             <ul class="sector-tabs">
@@ -188,7 +188,7 @@ export const header = `
                                 <div id="telecom-domain" class="sector-content active">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="#">Domain & Hosting Services</a>
+                                            <a href="/telecom-solutions/domain-hosting.html">Domain & Hosting Services</a>
                                         </div>
                                     </div>
                                 </div>
@@ -197,7 +197,7 @@ export const header = `
                                 <div id="telecom-monitoring" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="#">Network & Devices Monitoring Solutions</a>
+                                            <a href="/telecom-solutions/network-monitoring.html">Network & Devices Monitoring Solutions</a>
                                         </div>
                                     </div>
                                 </div>
@@ -206,8 +206,8 @@ export const header = `
                                 <div id="telecom-internet" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="#">Indoor & Outdoor Internet Solutions</a>
-                                            <a href="#">Satellite Internet Solutions</a>
+                                            <a href="/telecom-solutions/internet-services.html">Indoor & Outdoor Internet Solutions</a>
+                                            <a href="/telecom-solutions/satellite-internet.html">Satellite Internet Solutions</a>
                                         </div>
                                     </div>
                                 </div>
@@ -216,9 +216,9 @@ export const header = `
                                 <div id="telecom-connectivity" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="#">LAN, MAN & WAN Infrastructure</a>
-                                            <a href="fiber-optics.html">Fibre Optic Network Solutions</a>
-                                            <a href="5g-networks.html">5G & Wireless Connectivity</a>
+                                            <a href="/telecom-solutions/network-infrastructure.html">LAN, MAN & WAN Infrastructure</a>
+                                            <a href="/telecom-solutions/fiber-optics.html">Fibre Optic Network Solutions</a>
+                                            <a href="/telecom-solutions/5g-networks.html">5G & Wireless Connectivity</a>
                                         </div>
                                     </div>
                                 </div>
@@ -227,12 +227,11 @@ export const header = `
                                 <div id="telecom-devices" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="#">Telecom Hardware & Smart Devices</a>
-                                            <a href="tower-maintenance.html">Tower Infrastructure & Maintenance</a>
+                                            <a href="/telecom-solutions/smart-devices.html">Telecom Hardware & Smart Devices</a>
+                                            <a href="/telecom-solutions/tower-maintenance.html">Tower Infrastructure & Maintenance</a>
                                         </div>
                                         <div class="dropdown-column">
-                                            <a href="#">Other Telecom Solutions</a>
-                                            <a href="#">Data Transmission & Broadcasting</a>
+                                            <a href="/telecom-solutions/data-transmission.html">Data Transmission & Broadcasting</a>
                                         </div>
                                     </div>
                                 </div>

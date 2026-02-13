@@ -22,7 +22,14 @@ export default {
                 payment_idx: 'payment-solutions/index.html',
                 cash_idx: 'cash-management/index.html',
                 cx_idx: 'customer-experience/index.html',
-                shared_idx: 'shared-banking/index.html'
+                shared_idx: 'shared-banking/index.html',
+                domain_hosting: 'telecom-solutions/domain-hosting.html',
+                network_monitoring: 'telecom-solutions/network-monitoring.html',
+                internet_services: 'telecom-solutions/internet-services.html',
+                satellite_internet: 'telecom-solutions/satellite-internet.html',
+                network_infrastructure: 'telecom-solutions/network-infrastructure.html',
+                smart_devices: 'telecom-solutions/smart-devices.html',
+                data_transmission: 'telecom-solutions/data-transmission.html'
             }
         }
     },
