@@ -9,6 +9,25 @@ export function initNavigation() {
         });
     }
 
+    // Mobile Dropdown Toggle
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    dropdowns.forEach(dropdown => {
+        const link = dropdown.querySelector('a');
+        if (link) {
+            link.addEventListener('click', (e) => {
+                if (window.innerWidth <= 960) {
+                    e.preventDefault();
+                    // Close other dropdowns
+                    dropdowns.forEach(d => {
+                        if (d !== dropdown) d.classList.remove('dropdown-active');
+                    });
+                    dropdown.classList.toggle('dropdown-active');
+                }
+            });
+        }
+    });
+
     // Tabbed Mega Menu Logic
     const sectorContainers = document.querySelectorAll('.sector-container');
 

@@ -312,9 +312,9 @@ export const header = `
                                 <div id="services-consultancy" class="sector-content active">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="#">Business Strategy</a>
-                                            <a href="#">Digital Transformation</a>
-                                            <a href="#">IT Consulting</a>
+                                            <a href="/services/consultancy.html">Business Strategy</a>
+                                            <a href="/services/consultancy.html">Digital Transformation</a>
+                                            <a href="/services/consultancy.html">IT Consulting</a>
                                         </div>
                                     </div>
                                 </div>
@@ -323,41 +323,21 @@ export const header = `
                                 <div id="services-rnd" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="#">Product Innovation</a>
-                                            <a href="#">Market Research</a>
-                                            <a href="#">Feasibility Studies</a>
+                                            <a href="/services/product-innovation.html">Product Innovation</a>
+                                            <a href="/services/market-research.html">Market Research</a>
+                                            <a href="/services/feasibility-studies.html">Feasibility Studies</a>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!-- Software Content -->
-                                <div id="software" class="sector-content">
-                                    <div class="dropdown-row">
-                                        <div class="dropdown-column">
-                                            <a href="software-solutions.html#digital">Digital Transformation Solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(AI, IoT, Cloud Computing, Automation)</span></a>
-                                            <a href="software-solutions.html#office">Office Automation & Productivity Tools <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Microsoft 365, Google Workspace, Zoho)</span></a>
-                                            <a href="software-solutions.html#security">Cybersecurity & Compliance Software <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Antivirus, SIEM, Endpoint Protection)</span></a>
-                                            <a href="software-solutions.html#cloud">Networking & Cloud Solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(AWS, Azure, Google Cloud)</span></a>
-                                        </div>
-                                        <div class="dropdown-column">
-                                            <a href="software-solutions.html#enterprise">Enterprise E-solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(ERP, CRM, SCM - SAP, Oracle, MS Dynamics)</span></a>
-                                            <a href="software-solutions.html#msoffice">Microsoft Office Suite <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Word, Excel, PowerPoint, Outlook, Teams)</span></a>
-                                            <a href="software-solutions.html#queue">Queue Management Systems <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Electronic Ticketing, Automated Queuing)</span></a>
-                                        </div>
-                                        <div class="dropdown-column">
-                                            <a href="software-solutions.html#bi">Business Intelligence & Data Analytics <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Power BI, Tableau, SAS, Qlik)</span></a>
-                                            <a href="software-solutions.html#custom">Custom Software Development <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Web & Mobile Apps, AI Integration)</span></a>
-                                            <a href="software-solutions.html#crm">ERP & CRM Solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(SAP, Salesforce, Odoo, HubSpot)</span></a>
-                                        </div>
-                                    </div>
-                                </div>
+
 
                                 <!-- Installation & Maintenance -->
                                 <div id="services-install" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="#">Hardware & Software Deployment</a>
-                                            <a href="#">Annual Maintenance</a>
+                                            <a href="/services/installation-maintenance.html">Hardware & Software Deployment</a>
+                                            <a href="/services/installation-maintenance.html">Annual Maintenance</a>
                                         </div>
                                     </div>
                                 </div>
@@ -366,9 +346,9 @@ export const header = `
                                 <div id="services-support" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="#">Helpdesk</a>
-                                            <a href="#">SLA-based Support</a>
-                                            <a href="#">Remote Assistance</a>
+                                            <a href="/services/support.html">Helpdesk</a>
+                                            <a href="/services/support.html">SLA-based Support</a>
+                                            <a href="/services/support.html">Remote Assistance</a>
                                         </div>
                                     </div>
                                 </div>
@@ -377,8 +357,8 @@ export const header = `
                                 <div id="services-design" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="#">Network Design</a>
-                                            <a href="#">Security Optimization</a>
+                                            <a href="/services/system-design.html">Network Design</a>
+                                            <a href="/services/system-design.html">Security Optimization</a>
                                         </div>
                                     </div>
                                 </div>
@@ -387,7 +367,7 @@ export const header = `
                                 <div id="services-paas" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="#">Project Management & Execution</a>
+                                            <a href="/services/paas.html">Project Management & Execution</a>
                                         </div>
                                     </div>
                                 </div>
@@ -396,9 +376,9 @@ export const header = `
                                 <div id="services-custom" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="#">IT Training & Capacity Building</a>
-                                            <a href="#">Compliance & Risk Management Services</a>
-                                            <a href="#">Digital Marketing & Branding Solutions</a>
+                                            <a href="/services/custom-services.html">IT Training & Capacity Building</a>
+                                            <a href="/services/custom-services.html">Compliance & Risk Management Services</a>
+                                            <a href="/services/custom-services.html">Digital Marketing & Branding Solutions</a>
                                         </div>
                                     </div>
                                 </div>

@@ -1085,12 +1085,27 @@ footer {
     .nav-links li {
         width: 100%;
         padding: 0;
+        height: auto;
+        /* Reset fixed height from desktop */
+        overflow: visible;
+        /* Ensure content isn't clipped */
     }
 
     .nav-links>li>a {
         padding: 15px 20px;
         justify-content: space-between;
         border-bottom: 1px solid #f0f0f0;
+        font-size: 0.95rem;
+        /* Match reference */
+        font-weight: 500;
+        color: #333;
+    }
+
+    /* Active Top-Level Item */
+    .nav-links>li.dropdown-active>a {
+        color: var(--secondary-color);
+        background-color: #f9f9f9;
+        font-weight: 700;
     }
 
     /* Mobile Dropdown */
@@ -1101,10 +1116,14 @@ footer {
         display: none;
         box-shadow: none;
         border-top: none;
-        padding-left: 10px;
+        padding-left: 0;
         width: 100%;
         background-color: #f9f9f9;
         animation: none;
+        opacity: 1;
+        visibility: visible;
+        max-height: none;
+        overflow: visible;
     }
 
     /* Note: In a real implementation we'd need JS to toggle these on click for mobile.
@@ -1155,6 +1174,18 @@ footer {
         /* Show when parent has .active */
     }
 
+    /* Show dropdown when active class is present (toggled by JS) */
+    .dropdown.dropdown-active .dropdown-content,
+    .dropdown.dropdown-active .mattech-mega-content,
+    .nav-links li.dropdown-active .dropdown-content,
+    .nav-links li.dropdown-active .mattech-mega-content {
+        display: block !important;
+        animation: fadeIn 0.3s ease;
+        position: static !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
     .dropdown-row {
         flex-direction: column;
         gap: 0;
@@ -1163,8 +1194,10 @@ footer {
 
     .dropdown-column {
         width: 100%;
-        padding: 0 20px;
+        padding: 0 15px;
         margin-bottom: 20px;
+        flex: none;
+        /* Disable flex shrinking/growing */
     }
 
     .dropdown-column h3 {
@@ -1189,13 +1222,22 @@ footer {
         border-right: none;
         border-bottom: 1px solid #eee;
         flex-direction: row;
-        overflow-x: auto;
-        white-space: nowrap;
-        padding: 10px;
+        overflow-x: hidden;
+        /* No scroll, stack them */
+        white-space: normal;
+        /* Allow wrapping */
+        padding: 0;
+        /* Remove padding */
         background-color: #f9f9f9;
         /* Hide scrollbar */
         -ms-overflow-style: none;
         scrollbar-width: none;
+        margin-bottom: 0;
+        /* Connect to content */
+        gap: 0;
+        /* No gap */
+        display: block;
+        /* Stack vertically */
     }
 
     .sector-tabs::-webkit-scrollbar {
@@ -1203,17 +1245,52 @@ footer {
     }
 
     .sector-tabs li {
-        padding: 8px 15px;
-        border-radius: 20px;
-        margin-right: 10px;
-        background: #fff;
-        border: 1px solid #eee;
+        padding: 12px 20px 12px 40px;
+        /* Indent Level 2 */
+        border-radius: 0;
+        /* Square corners */
+        margin-right: 0;
+        background: #f9f9f9;
+        border: none;
+        border-bottom: 1px solid #eee;
+        font-size: 0.9rem;
+        flex-shrink: 0;
+        transition: all 0.2s ease;
+        box-shadow: none;
+        color: #555;
+        text-align: left;
+        display: block;
+        /* Full width */
+        width: 100%;
+        position: relative;
+    }
+
+    .sector-tabs li::after {
+        content: '\f078';
+        /* FontAwesome Chevron Down */
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 0.8rem;
+        color: #ccc;
     }
 
     .sector-tabs li.active {
-        background-color: var(--primary-color);
-        color: #fff;
-        border-color: var(--primary-color);
+        background-color: #fff;
+        /* White background for active tab area */
+        /* Use secondary (orange) for active text */
+        color: var(--secondary-color);
+        border-color: #eee;
+        box-shadow: none;
+        font-weight: 600;
+    }
+
+    .sector-tabs li.active::after {
+        transform: translateY(-50%) rotate(180deg);
+        color: var(--secondary-color);
     }
 
     .sector-content-area {
@@ -1228,6 +1305,36 @@ footer {
 
     .sector-content .dropdown-column {
         width: 100%;
+        padding: 0;
+        margin-bottom: 15px;
+        /* Separation between columns */
+    }
+
+    /* Level 3 Links */
+    .sector-content .dropdown-column a {
+        padding: 10px 20px 10px 60px;
+        /* Indent Level 3 */
+        background: #fff;
+        /* Match active tab background */
+        margin-bottom: 0;
+        border-radius: 0;
+        box-shadow: none;
+        border: none;
+        border-bottom: 1px solid #f5f5f5;
+        display: block;
+        font-weight: 400;
+        color: #666;
+        font-size: 0.9rem;
+    }
+
+    .sector-content .dropdown-column a:hover {
+        background-color: #fafafa;
+        border-color: #f5f5f5;
+        color: var(--secondary-color);
+        transform: none;
+        /* No movement */
+        padding-left: 65px;
+        /* Slight nudge */
     }
 }
 
