@@ -1177,6 +1177,58 @@ footer {
     .mattech-mega-menu.active>a i {
         transform: rotate(180deg);
     }
+
+    /* Mobile Sector Menu (Tabbed) */
+    .sector-container {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .sector-tabs {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        flex-direction: row;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 10px;
+        background-color: #f9f9f9;
+        /* Hide scrollbar */
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .sector-tabs::-webkit-scrollbar {
+        display: none;
+    }
+
+    .sector-tabs li {
+        padding: 8px 15px;
+        border-radius: 20px;
+        margin-right: 10px;
+        background: #fff;
+        border: 1px solid #eee;
+    }
+
+    .sector-tabs li.active {
+        background-color: var(--primary-color);
+        color: #fff;
+        border-color: var(--primary-color);
+    }
+
+    .sector-content-area {
+        width: 100%;
+        padding: 20px;
+        min-height: auto;
+    }
+
+    .sector-content .dropdown-row {
+        grid-template-columns: 1fr;
+    }
+
+    .sector-content .dropdown-column {
+        width: 100%;
+    }
 }
 
 /* Company Overview Section */

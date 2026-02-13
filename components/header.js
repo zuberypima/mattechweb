@@ -88,18 +88,19 @@ export const header = `
                                 <div id="banking-fintech" class="sector-content active">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="#">Open API & Integration Services</a>
-                                            <a href="#">Robotic Process Automation (RPA)</a>
-                                            <a href="blockchain-solutions.html">Blockchain & Distributed Ledger</a>
+                                            <a href="fintech-solutions/index.html"><strong>Fintech Solutions (Overview)</strong></a>
+                                            <a href="fintech-solutions/open-api-integration.html">Open API & Integration Services</a>
+                                            <a href="fintech-solutions/rpa-finance.html">Robotic Process Automation (RPA)</a>
+                                            <a href="fintech-solutions/blockchain-solutions.html">Blockchain & Distributed Ledger</a>
                                         </div>
                                         <div class="dropdown-column">
-                                            <a href="#">Artificial Intelligence (AI) in Finance</a>
-                                            <a href="compliance-tools.html">Regulatory Technology (RegTech)</a>
-                                            <a href="#">Core Banking System (CBS) Modules</a>
+                                            <a href="fintech-solutions/ai-finance.html">Artificial Intelligence (AI) in Finance</a>
+                                            <a href="fintech-solutions/compliance-tools.html">Regulatory Technology (RegTech)</a>
+                                            <a href="fintech-solutions/core-banking-modules.html">Core Banking System (CBS) Modules</a>
                                         </div>
                                         <div class="dropdown-column">
-                                            <a href="#">Insurance Tech Solutions</a>
-                                            <a href="#">Digital Lending & Credit Scoring</a>
+                                            <a href="fintech-solutions/insurance-tech.html">Insurance Tech Solutions</a>
+                                            <a href="fintech-solutions/digital-lending.html">Digital Lending & Credit Scoring</a>
                                         </div>
                                     </div>
                                 </div>
@@ -108,16 +109,17 @@ export const header = `
                                 <div id="banking-payments" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="#">Point of Sale (POS) Systems</a>
-                                            <a href="#">Mobile Banking Applications</a>
+                                            <a href="payment-solutions/index.html"><strong>Payment Solutions (Overview)</strong></a>
+                                            <a href="payment-solutions/pos-systems.html">Point of Sale (POS) Systems</a>
+                                            <a href="payment-solutions/mobile-banking.html">Mobile Banking Applications</a>
                                         </div>
                                         <div class="dropdown-column">
-                                            <a href="mobile-wallets.html">Mobile Wallet & Digital Payments</a>
-                                            <a href="#">Self-Service KIOSK Solutions</a>
+                                            <a href="payment-solutions/mobile-wallets.html">Mobile Wallet & Digital Payments</a>
+                                            <a href="payment-solutions/kiosk-solutions.html">Self-Service KIOSK Solutions</a>
                                         </div>
                                         <div class="dropdown-column">
-                                            <a href="#">Secure Card Production & Management</a>
-                                            <a href="#">Cross-Border Payment Solutions</a>
+                                            <a href="payment-solutions/secure-card.html">Secure Card Production & Management</a>
+                                            <a href="payment-solutions/cross-border-payments.html">Cross-Border Payment Solutions</a>
                                         </div>
                                     </div>
                                 </div>
@@ -126,12 +128,13 @@ export const header = `
                                 <div id="banking-cash" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="#">Currency Verifies Machines</a>
-                                            <a href="#">Automated Teller Machines (ATMs)</a>
+                                            <a href="cash-management/index.html"><strong>Cash Management (Overview)</strong></a>
+                                            <a href="cash-management/currency-verifiers.html">Currency Verifies Machines</a>
+                                            <a href="cash-management/atms.html">Automated Teller Machines (ATMs)</a>
                                         </div>
                                         <div class="dropdown-column">
-                                            <a href="#">Cash Banding & Wrapping Machines</a>
-                                            <a href="#">Smart Cash Deposit & Recycling Machines</a>
+                                            <a href="cash-management/cash-banding.html">Cash Banding & Wrapping Machines</a>
+                                            <a href="cash-management/smart-deposit.html">Smart Cash Deposit & Recycling Machines</a>
                                         </div>
                                     </div>
                                 </div>
@@ -140,12 +143,13 @@ export const header = `
                                 <div id="banking-cx" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="#">Omni-channel Contact Centre Solutions</a>
-                                            <a href="#">Branch Automation & Self-Service Banking</a>
+                                            <a href="customer-experience/index.html"><strong>Customer Experience (Overview)</strong></a>
+                                            <a href="customer-experience/omni-channel.html">Omni-channel Contact Centre Solutions</a>
+                                            <a href="customer-experience/branch-automation.html">Branch Automation & Self-Service Banking</a>
                                         </div>
                                         <div class="dropdown-column">
-                                            <a href="#">Mobile Banking Branches</a>
-                                            <a href="#">Customer Relationship Management (CRM)</a>
+                                            <a href="customer-experience/mobile-branches.html">Mobile Banking Branches</a>
+                                            <a href="customer-experience/crm-solutions.html">Customer Relationship Management (CRM)</a>
                                         </div>
                                     </div>
                                 </div>
@@ -154,8 +158,9 @@ export const header = `
                                 <div id="banking-shared" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="#">Banking as a Service (BaaS)</a>
-                                            <a href="#">Cloud-Based Financial Solutions</a>
+                                            <a href="shared-banking/index.html"><strong>Shared Banking (Overview)</strong></a>
+                                            <a href="shared-banking/baas.html">Banking as a Service (BaaS)</a>
+                                            <a href="shared-banking/cloud-finance.html">Cloud-Based Financial Solutions</a>
                                         </div>
                                     </div>
                                 </div>

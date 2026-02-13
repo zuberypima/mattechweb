@@ -12,6 +12,29 @@ export const partners = `
             <div class="logo-item"><img src="https://placehold.co/200x80/ffffff/800080?text=PURPLESEC&font=roboto" alt="PURPLESEC"></div>
             <div class="logo-item"><img src="https://placehold.co/200x80/ffffff/008080?text=KIYA.AI&font=roboto" alt="KIYA.AI"></div>
             <div class="logo-item"><img src="https://placehold.co/200x80/ffffff/333333?text=RADEN&font=roboto" alt="RADEN"></div>
+            
+            <!-- New Partners -->
+            <div class="logo-item"><img src="https://placehold.co/200x80/ffffff/000000?text=AISINO&font=roboto" alt="AISINO"></div>
+            <div class="logo-item"><img src="https://placehold.co/200x80/ffffff/0056b3?text=TELPO&font=roboto" alt="TELPO"></div>
+            <div class="logo-item"><img src="https://placehold.co/200x80/ffffff/ff0000?text=D8&font=roboto" alt="D8"></div>
+            <div class="logo-item"><img src="https://placehold.co/200x80/ffffff/00a651?text=NETXMS&font=roboto" alt="NETXMS"></div>
+            <div class="logo-item"><img src="https://placehold.co/200x80/ffffff/003366?text=GILBARCO&font=roboto" alt="GILBARCO"></div>
+            <div class="logo-item"><img src="https://placehold.co/200x80/ffffff/ff9900?text=WAVETEC&font=roboto" alt="WAVETEC"></div>
+            <div class="logo-item"><img src="https://placehold.co/200x80/ffffff/000080?text=MARINA&font=roboto" alt="MARINA"></div>
+            <div class="logo-item"><img src="https://placehold.co/200x80/ffffff/660066?text=INLAKS&font=roboto" alt="INLAKS"></div>
+            <div class="logo-item"><img src="https://placehold.co/200x80/ffffff/0044cc?text=CONTIPARK&font=roboto" alt="CONTIPARK"></div>
+            <div class="logo-item"><img src="https://placehold.co/200x80/ffffff/3399ff?text=SAFE+SOFTWARE&font=roboto" alt="SAFE SOFTWARE"></div>
+            
+            <!-- Additional Partners (Batch 2) -->
+            <div class="logo-item"><img src="https://placehold.co/200x80/ffffff/000066?text=TARDIS&font=roboto" alt="TARDIS"></div>
+            <div class="logo-item"><img src="https://placehold.co/200x80/ffffff/00cc00?text=EKO&font=roboto" alt="EKO"></div>
+            <div class="logo-item"><img src="https://placehold.co/200x80/ffffff/cc0000?text=M4BANK&font=roboto" alt="M4BANK"></div>
+            <div class="logo-item"><img src="https://placehold.co/200x80/ffffff/0066cc?text=INETCO&font=roboto" alt="INETCO"></div>
+            <div class="logo-item"><img src="https://placehold.co/200x80/ffffff/333333?text=G-TECH&font=roboto" alt="G-TECH"></div>
+            <div class="logo-item"><img src="https://placehold.co/200x80/ffffff/ff6600?text=GAPS&font=roboto" alt="GAPS"></div>
+             <div class="logo-item"><img src="https://placehold.co/200x80/ffffff/666699?text=TORUS&font=roboto" alt="TORUS"></div>
+            <div class="logo-item"><img src="https://placehold.co/200x80/ffffff/0099cc?text=MOBFIN&font=roboto" alt="MOBFIN"></div>
+            <div class="logo-item"><img src="https://placehold.co/200x80/ffffff/990000?text=FOUNDANT&font=roboto" alt="FOUNDANT"></div>
         </div>
 
         <!-- Clients -->

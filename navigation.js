@@ -18,7 +18,15 @@ export function initNavigation() {
             const contents = container.querySelectorAll('.sector-content');
 
             tabs.forEach(tab => {
-                tab.addEventListener('mouseover', () => {
+                // Handle both click and hover for better UX
+                const activateTab = (e) => {
+                    if (e.type === 'click' && window.innerWidth > 960) {
+                        return; // Let hover handle desktop, but allow click functionality if needed
+                    }
+                    if (e.type === 'click') {
+                        e.preventDefault(); // Prevent jump behavior if any
+                    }
+
                     // Remove active class from tabs in THIS container only
                     tabs.forEach(t => t.classList.remove('active'));
                     // Add active class to hovered tab
@@ -33,7 +41,15 @@ export function initNavigation() {
                     if (targetContent) {
                         targetContent.classList.add('active');
                     }
-                });
+                };
+
+                tab.addEventListener('mouseover', activateTab);
+                tab.addEventListener('click', activateTab);
+                // Trigger click for touch devices
+                tab.addEventListener('touchstart', (e) => {
+                    // e.preventDefault(); // Optional: prevent ghost clicks
+                    activateTab(e);
+                }, { passive: true });
             });
         });
     }
