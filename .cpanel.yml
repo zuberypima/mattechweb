@@ -1,14 +1,7 @@
 ---
 deployment:
   tasks:
-    # Use your actual server path from the screenshot
     - export DEPLOYPATH=/home2/mattechc/public_html/
-    
-    # 1. Install dependencies
-    - npm install
-    
-    # 2. Build the Vite project
+    - npm ci
     - npm run build
-    
-    # 3. Copy only the built files to your public folder
     - /bin/cp -R dist/* $DEPLOYPATH
