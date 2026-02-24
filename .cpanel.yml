@@ -1,9 +1,8 @@
 ---
 deployment:
   tasks:
-    # IMPORTANT: Replace 'cpuser' with your actual cPanel username.
-    # If your domain's document root is not public_html, adjust the path below.
-    - export DEPLOYPATH=/home/cpuser/public_html/
+    # Use your actual server path from the screenshot
+    - export DEPLOYPATH=/home2/mattechc/public_html/
     
     # 1. Install dependencies
     - npm install
@@ -11,5 +10,5 @@ deployment:
     # 2. Build the Vite project
     - npm run build
     
-    # 3. Copy the built files from the 'dist' folder to the public directory
+    # 3. Copy only the built files to your public folder
     - /bin/cp -R dist/* $DEPLOYPATH
