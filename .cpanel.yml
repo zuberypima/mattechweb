@@ -2,6 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home2/mattechc/public_html/
-    - npm ci
-    - npm run build
     - /bin/cp -R dist/* $DEPLOYPATH
+
