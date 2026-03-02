@@ -1,1 +1,0 @@
-import{l as e,a as o}from"./header-DmZfBCRa.js";import{E as a}from"./energy-utilities-content-BxgtE1Ir.js";document.addEventListener("DOMContentLoaded",async()=>{await e(),o();const t=document.getElementById("main-content"),n=new a;t.innerHTML=n.render("tank-management"),n.init()});

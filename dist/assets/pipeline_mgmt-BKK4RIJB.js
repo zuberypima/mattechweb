@@ -1,0 +1,1 @@
+import{l as t,a as o}from"./header-CSBM9und.js";import{E as a}from"./energy-utilities-content-Kc4eBjfh.js";document.addEventListener("DOMContentLoaded",async()=>{await t(),o();const e=document.getElementById("main-content"),n=new a;e.innerHTML=n.render("pipeline-management"),n.init()});
