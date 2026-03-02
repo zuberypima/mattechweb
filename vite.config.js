@@ -37,7 +37,8 @@ export default {
                 tank_mgmt: 'energy-utilities/tank-management.html',
                 pipeline_mgmt: 'energy-utilities/pipeline-management.html',
                 water_waste: 'energy-utilities/water-waste-management.html',
-                smart_metering: 'energy-utilities/smart-metering.html'
+                smart_metering: 'energy-utilities/smart-metering.html',
+                our_team: 'our-team.html'
             }
         }
     },

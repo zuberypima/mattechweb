@@ -1,34 +1,67 @@
 export function initNavigation() {
-    // Navigation Logic
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
+    const hamburgerIcon = hamburger ? hamburger.querySelector('i') : null;
 
-    if (hamburger) {
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('open');
+    function openNav() {
+        navLinks.classList.add('open');
+        document.body.classList.add('nav-open');
+        if (hamburgerIcon) {
+            hamburgerIcon.classList.remove('fa-bars');
+            hamburgerIcon.classList.add('fa-times');
+        }
+    }
+
+    function closeNav() {
+        navLinks.classList.remove('open');
+        document.body.classList.remove('nav-open');
+        if (hamburgerIcon) {
+            hamburgerIcon.classList.add('fa-bars');
+            hamburgerIcon.classList.remove('fa-times');
+        }
+    }
+
+    // --- Hamburger Toggle ---
+    if (hamburger && navLinks) {
+        hamburger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            navLinks.classList.contains('open') ? closeNav() : openNav();
         });
     }
 
-    // Mobile Dropdown Toggle
-    const dropdowns = document.querySelectorAll('.dropdown');
+    // --- Close menu when clicking outside ---
+    document.addEventListener('click', (e) => {
+        if (navLinks && navLinks.classList.contains('open')) {
+            if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
+                closeNav();
+            }
+        }
+    });
+
+    // --- Mobile Dropdown Toggle ---
+    const dropdowns = document.querySelectorAll('.nav-links .dropdown');
 
     dropdowns.forEach(dropdown => {
-        const link = dropdown.querySelector('a');
+        const link = dropdown.querySelector(':scope > a');
         if (link) {
             link.addEventListener('click', (e) => {
                 if (window.innerWidth <= 960) {
                     e.preventDefault();
-                    // Close other dropdowns
+                    e.stopPropagation();
+                    const isActive = dropdown.classList.contains('dropdown-active');
+                    // Close all other dropdowns
                     dropdowns.forEach(d => {
-                        if (d !== dropdown) d.classList.remove('dropdown-active');
+                        if (d !== dropdown) {
+                            d.classList.remove('dropdown-active');
+                        }
                     });
-                    dropdown.classList.toggle('dropdown-active');
+                    dropdown.classList.toggle('dropdown-active', !isActive);
                 }
             });
         }
     });
 
-    // Tabbed Mega Menu Logic
+    // --- Tabbed Mega Menu Logic (Desktop hover & Mobile click) ---
     const sectorContainers = document.querySelectorAll('.sector-container');
 
     if (sectorContainers.length > 0) {
@@ -37,26 +70,21 @@ export function initNavigation() {
             const contents = container.querySelectorAll('.sector-content');
 
             tabs.forEach(tab => {
-                // Handle both click and hover for better UX
                 const activateTab = (e) => {
                     if (e.type === 'click' && window.innerWidth > 960) {
-                        return; // Let hover handle desktop, but allow click functionality if needed
+                        return; // Desktop uses hover
                     }
-                    if (e.type === 'click') {
-                        e.preventDefault(); // Prevent jump behavior if any
+                    if (e.type === 'click' || e.type === 'touchstart') {
+                        e.preventDefault();
+                        e.stopPropagation();
                     }
 
-                    // Remove active class from tabs in THIS container only
                     tabs.forEach(t => t.classList.remove('active'));
-                    // Add active class to hovered tab
                     tab.classList.add('active');
 
-                    // Hide contents in THIS container only
                     contents.forEach(c => c.classList.remove('active'));
-
-                    // Show corresponding content content
                     const targetId = tab.getAttribute('data-tab');
-                    const targetContent = document.getElementById(targetId);
+                    const targetContent = container.querySelector('#' + targetId);
                     if (targetContent) {
                         targetContent.classList.add('active');
                     }
@@ -64,11 +92,18 @@ export function initNavigation() {
 
                 tab.addEventListener('mouseover', activateTab);
                 tab.addEventListener('click', activateTab);
-                // Trigger click for touch devices
-                tab.addEventListener('touchstart', (e) => {
-                    // e.preventDefault(); // Optional: prevent ghost clicks
-                    activateTab(e);
-                }, { passive: true });
+                tab.addEventListener('touchstart', activateTab, { passive: false });
+            });
+        });
+    }
+
+    // --- Close nav links when a leaf link is clicked (mobile) ---
+    if (navLinks) {
+        navLinks.querySelectorAll('a[href]:not([href="#"])').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 960 && navLinks.classList.contains('open')) {
+                    closeNav();
+                }
             });
         });
     }

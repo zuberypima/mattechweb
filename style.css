@@ -642,6 +642,17 @@ nav {
     cursor: pointer;
     font-size: 1.5rem;
     color: var(--primary-color);
+    background: none;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    flex-shrink: 0;
+    z-index: 1001;
+}
+
+.hamburger:hover {
+    background-color: rgba(20, 76, 77, 0.08);
 }
 
 /* Hero Section */
@@ -1062,6 +1073,15 @@ footer {
 
 /* Mobile Responsiveness */
 @media (max-width: 960px) {
+
+    /* --- Hamburger --- */
+    .hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* --- Mobile Nav Panel --- */
     .nav-links {
         display: none;
         flex-direction: column;
@@ -1070,52 +1090,77 @@ footer {
         left: 0;
         width: 100%;
         background-color: var(--white);
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        padding: 20px 0;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        padding: 10px 0;
         align-items: flex-start;
-        max-height: 80vh;
+        max-height: calc(100vh - var(--nav-height));
         overflow-y: auto;
+        z-index: 999;
+        border-top: 3px solid var(--secondary-color);
+        -webkit-overflow-scrolling: touch;
     }
 
     .nav-links.open {
         display: flex;
     }
 
+    /* Reset desktop li styles */
     .nav-links li {
         width: 100%;
         padding: 0;
         height: auto;
-        /* Reset fixed height from desktop */
-        overflow: visible;
-        /* Ensure content isn't clipped */
+        overflow: hidden;
     }
 
+    /* Prevent pseudo-element bridge from being visible on mobile */
+    .nav-links li::after {
+        display: none;
+    }
+
+    /* Top-level nav links */
     .nav-links>li>a {
-        padding: 15px 20px;
+        padding: 14px 20px;
+        display: flex;
         justify-content: space-between;
+        align-items: center;
         border-bottom: 1px solid #f0f0f0;
         font-size: 0.95rem;
-        /* Match reference */
-        font-weight: 500;
+        font-weight: 600;
         color: #333;
+        width: 100%;
+        white-space: normal;
     }
 
     /* Active Top-Level Item */
     .nav-links>li.dropdown-active>a {
         color: var(--secondary-color);
-        background-color: #f9f9f9;
+        background-color: #fdf6f2;
         font-weight: 700;
     }
 
-    /* Mobile Dropdown */
-    .dropdown-content,
-    .mega-content,
-    .product-content {
-        position: static;
+    /* Rotate chevron on active item */
+    .nav-links>li.dropdown-active>a i.fa-chevron-down {
+        transform: rotate(180deg);
+    }
+
+    /* Disable desktop hover dropdowns on mobile */
+    .nav-links li:hover .dropdown-content,
+    .nav-links li:hover .mattech-mega-content,
+    .nav-links li:hover .product-content,
+    .nav-links li:hover .sector-dropdown {
         display: none;
+    }
+
+    /* --- Mobile Dropdown Base Styles --- */
+    .dropdown-content,
+    .mattech-mega-content,
+    .product-content {
+        display: none;
+        position: static !important;
         box-shadow: none;
         border-top: none;
-        padding-left: 0;
+        border-radius: 0;
+        padding: 0;
         width: 100%;
         background-color: #f9f9f9;
         animation: none;
@@ -1125,92 +1170,19 @@ footer {
         overflow: visible;
     }
 
-    /* Note: In a real implementation we'd need JS to toggle these on click for mobile.
-       Where hover works on desktop, click/tap is needed on mobile. */
-    .nav-links li:hover .dropdown-content,
-    .nav-links li:hover .mega-content {
-        display: block;
-        /* Basic fallback for hybrid devices, ideally handled by JS */
-    }
-
-    .hamburger {
+    /* Show dropdown when dropdown-active toggled by JS */
+    .nav-links li.dropdown-active>.dropdown-content,
+    .nav-links li.dropdown-active>.mattech-mega-content {
         display: block;
     }
 
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
-
-    .about-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .stats-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    /* Mobile Mega Menu Styles */
+    /* --- Mega Menu Mobile --- */
     .mattech-mega-menu {
         position: static !important;
-        /* Ensure it flows in document */
         width: 100%;
     }
 
-    .mattech-mega-content {
-        position: static;
-        display: none;
-        /* Hidden by default */
-        width: 100%;
-        box-shadow: none;
-        border-top: none;
-        padding: 0;
-        background-color: #f9f9f9;
-        animation: none;
-    }
-
-    .mattech-mega-menu.active .mattech-mega-content {
-        display: block;
-        /* Show when parent has .active */
-    }
-
-    /* Show dropdown when active class is present (toggled by JS) */
-    .dropdown.dropdown-active .dropdown-content,
-    .dropdown.dropdown-active .mattech-mega-content,
-    .nav-links li.dropdown-active .dropdown-content,
-    .nav-links li.dropdown-active .mattech-mega-content {
-        display: block !important;
-        animation: fadeIn 0.3s ease;
-        position: static !important;
-        visibility: visible !important;
-        opacity: 1 !important;
-    }
-
-    .dropdown-row {
-        flex-direction: column;
-        gap: 0;
-        padding: 10px 0;
-    }
-
-    .dropdown-column {
-        width: 100%;
-        padding: 0 15px;
-        margin-bottom: 20px;
-        flex: none;
-        /* Disable flex shrinking/growing */
-    }
-
-    .dropdown-column h3 {
-        padding-left: 0;
-        margin-top: 10px;
-        font-size: 1rem;
-    }
-
-    /* Chevron rotation on active */
-    .mattech-mega-menu.active>a i {
-        transform: rotate(180deg);
-    }
-
-    /* Mobile Sector Menu (Tabbed) */
+    /* --- Sector Container (accordion on mobile) --- */
     .sector-container {
         flex-direction: column;
         min-height: auto;
@@ -1219,24 +1191,13 @@ footer {
     .sector-tabs {
         width: 100%;
         border-right: none;
-        border-bottom: 1px solid #eee;
-        flex-direction: row;
-        overflow-x: hidden;
-        /* No scroll, stack them */
-        white-space: normal;
-        /* Allow wrapping */
+        border-bottom: none;
+        flex-direction: column;
         padding: 0;
-        /* Remove padding */
         background-color: #f9f9f9;
-        /* Hide scrollbar */
         -ms-overflow-style: none;
         scrollbar-width: none;
-        margin-bottom: 0;
-        /* Connect to content */
-        gap: 0;
-        /* No gap */
         display: block;
-        /* Stack vertically */
     }
 
     .sector-tabs::-webkit-scrollbar {
@@ -1245,9 +1206,7 @@ footer {
 
     .sector-tabs li {
         padding: 12px 20px 12px 40px;
-        /* Indent Level 2 */
         border-radius: 0;
-        /* Square corners */
         margin-right: 0;
         background: #f9f9f9;
         border: none;
@@ -1259,14 +1218,13 @@ footer {
         color: #555;
         text-align: left;
         display: block;
-        /* Full width */
         width: 100%;
         position: relative;
+        cursor: pointer;
     }
 
     .sector-tabs li::after {
         content: '\f078';
-        /* FontAwesome Chevron Down */
         font-family: 'Font Awesome 5 Free';
         font-weight: 900;
         position: absolute;
@@ -1275,12 +1233,11 @@ footer {
         transform: translateY(-50%);
         font-size: 0.8rem;
         color: #ccc;
+        display: block;
     }
 
     .sector-tabs li.active {
         background-color: #fff;
-        /* White background for active tab area */
-        /* Use secondary (orange) for active text */
         color: var(--secondary-color);
         border-color: #eee;
         box-shadow: none;
@@ -1294,27 +1251,47 @@ footer {
 
     .sector-content-area {
         width: 100%;
-        padding: 20px;
+        padding: 10px 0;
         min-height: auto;
+        background: #fff;
+    }
+
+    /* --- Dropdown Row & Columns --- */
+    .dropdown-row {
+        flex-direction: column;
+        gap: 0;
+        padding: 10px 0;
+    }
+
+    .dropdown-column {
+        width: 100%;
+        padding: 0 15px;
+        margin-bottom: 15px;
+        flex: none;
+    }
+
+    .dropdown-column h3 {
+        padding-left: 0;
+        margin-top: 10px;
+        font-size: 1rem;
     }
 
     .sector-content .dropdown-row {
         grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
     }
 
     .sector-content .dropdown-column {
         width: 100%;
         padding: 0;
-        margin-bottom: 15px;
-        /* Separation between columns */
+        margin-bottom: 10px;
     }
 
     /* Level 3 Links */
     .sector-content .dropdown-column a {
-        padding: 10px 20px 10px 60px;
-        /* Indent Level 3 */
+        padding: 10px 20px 10px 55px;
         background: #fff;
-        /* Match active tab background */
         margin-bottom: 0;
         border-radius: 0;
         box-shadow: none;
@@ -1328,12 +1305,22 @@ footer {
 
     .sector-content .dropdown-column a:hover {
         background-color: #fafafa;
-        border-color: #f5f5f5;
         color: var(--secondary-color);
         transform: none;
-        /* No movement */
-        padding-left: 65px;
-        /* Slight nudge */
+        padding-left: 60px;
+    }
+
+    /* General responsive adjustments */
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
     }
 }
 

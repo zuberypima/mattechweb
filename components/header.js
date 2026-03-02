@@ -1,4 +1,4 @@
-import { initNavigation } from '../navigation.js';
+﻿import { initNavigation } from '../navigation.js';
 import { footer } from './footer.js';
 
 export const header = `
@@ -191,7 +191,18 @@ export const header = `
                                 <div id="telecom-domain" class="sector-content active">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="/telecom-solutions/domain-hosting.html">Domain & Hosting Services</a>
+                                            <a href="/telecom-solutions/domain-hosting.html">Domain Registration & Management <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Local & International Domains)</span></a>
+                                            <a href="/telecom-solutions/domain-hosting.html#shared">Shared & Cloud Web Hosting <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(cPanel, Plesk, VPS Hosting)</span></a>
+                                            <a href="/telecom-solutions/domain-hosting.html#ssl">SSL Certificates & Website Security <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(DV, OV, EV SSL, Wildcard)</span></a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="/telecom-solutions/domain-hosting.html#dedicated">Dedicated & Colocation Hosting <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Data Centre Rack Space, Managed Servers)</span></a>
+                                            <a href="/telecom-solutions/domain-hosting.html#email">Business Email Solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Microsoft 365, Google Workspace)</span></a>
+                                            <a href="/telecom-solutions/domain-hosting.html#cdn">CDN & Performance Solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Content Delivery, Load Balancing)</span></a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="/telecom-solutions/domain-hosting.html#dns">DNS Management & Optimization <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Authoritative DNS, DDoS Protection)</span></a>
+                                            <a href="/telecom-solutions/domain-hosting.html#backup">Website Backup & Disaster Recovery <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Automated Backups, Restore Solutions)</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -200,7 +211,16 @@ export const header = `
                                 <div id="telecom-monitoring" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="/telecom-solutions/network-monitoring.html">Network & Devices Monitoring Solutions</a>
+                                            <a href="/telecom-solutions/network-monitoring.html">Network Performance Monitoring <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Real-time Traffic Analysis, Bandwidth)</span></a>
+                                            <a href="/telecom-solutions/network-monitoring.html#noc">NOC & Operations Centre Solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(24/7 Network Operations Centre)</span></a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="/telecom-solutions/network-monitoring.html#siem">SIEM & Security Monitoring <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Threat Detection, Log Management)</span></a>
+                                            <a href="/telecom-solutions/network-monitoring.html#iot">IoT Device Monitoring <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Sensor Networks, Remote Assets)</span></a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="/telecom-solutions/network-monitoring.html#uptime">Uptime & Availability Monitoring <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(SLA Reporting, Alert Systems)</span></a>
+                                            <a href="/telecom-solutions/network-monitoring.html#tools">Monitoring Tools & Platforms <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Nagios, Zabbix, SolarWinds)</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -209,8 +229,16 @@ export const header = `
                                 <div id="telecom-internet" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="/telecom-solutions/internet-services.html">Indoor & Outdoor Internet Solutions</a>
-                                            <a href="/telecom-solutions/satellite-internet.html">Satellite Internet Solutions</a>
+                                            <a href="/telecom-solutions/internet-services.html">Indoor & Outdoor Internet Solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Fixed Wireless, LTE/4G/5G)</span></a>
+                                            <a href="/telecom-solutions/internet-services.html#leased">Leased Line & Dedicated Internet <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Enterprise & SME Bandwidth)</span></a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="/telecom-solutions/satellite-internet.html">Satellite Internet Solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(VSAT, Starlink, Rural Connectivity)</span></a>
+                                            <a href="/telecom-solutions/internet-services.html#isp">ISP Services & Last-Mile Delivery <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Fibre, Wireless, Hybrid)</span></a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="/telecom-solutions/internet-services.html#backup">Internet Redundancy & Failover <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Dual-Link, SD-WAN Failover)</span></a>
+                                            <a href="/telecom-solutions/internet-services.html#wifi">Public & Campus Wi-Fi Solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Hotspot, Managed Wi-Fi)</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -219,9 +247,16 @@ export const header = `
                                 <div id="telecom-connectivity" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="/telecom-solutions/network-infrastructure.html">LAN, MAN & WAN Infrastructure</a>
-                                            <a href="/telecom-solutions/fiber-optics.html">Fibre Optic Network Solutions</a>
-                                            <a href="/telecom-solutions/5g-networks.html">5G & Wireless Connectivity</a>
+                                            <a href="/telecom-solutions/network-infrastructure.html">LAN, MAN & WAN Infrastructure <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Structured Cabling, Switching)</span></a>
+                                            <a href="/telecom-solutions/fiber-optics.html">Fibre Optic Network Solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(FTTH, FTTB, Metro Fibre)</span></a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="/telecom-solutions/5g-networks.html">5G & Wireless Connectivity <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Private 5G, mmWave, NR)</span></a>
+                                            <a href="/telecom-solutions/network-infrastructure.html#mpls">MPLS & SD-WAN Solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Enterprise Wide Area Networking)</span></a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="/telecom-solutions/network-infrastructure.html#vpn">VPN & Secure Remote Access <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Site-to-Site, Remote Worker VPN)</span></a>
+                                            <a href="/telecom-solutions/network-infrastructure.html#microwave">Microwave & Point-to-Point Links <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Long-range Wireless Backhaul)</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -230,11 +265,16 @@ export const header = `
                                 <div id="telecom-devices" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="/telecom-solutions/smart-devices.html">Telecom Hardware & Smart Devices</a>
-                                            <a href="/telecom-solutions/tower-maintenance.html">Tower Infrastructure & Maintenance</a>
+                                            <a href="/telecom-solutions/smart-devices.html">Telecom Hardware & Smart Devices <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Routers, Switches, Access Points)</span></a>
+                                            <a href="/telecom-solutions/tower-maintenance.html">Tower Infrastructure & Maintenance <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(BTS, Mast Installation & Repairs)</span></a>
                                         </div>
                                         <div class="dropdown-column">
-                                            <a href="/telecom-solutions/data-transmission.html">Data Transmission & Broadcasting</a>
+                                            <a href="/telecom-solutions/data-transmission.html">Data Transmission & Broadcasting <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(IPTV, DVB, Digital Broadcast)</span></a>
+                                            <a href="/telecom-solutions/smart-devices.html#pbx">IP PBX & Unified Communications <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(3CX, Cisco, Grandstream)</span></a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="/telecom-solutions/smart-devices.html#surveillance">Telecom-grade Surveillance Systems <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(IP Cameras, NVR, Encoders)</span></a>
+                                            <a href="/telecom-solutions/smart-devices.html#power">Power Solutions for Telecom Sites <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Solar, Rectifiers, Batteries)</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -260,8 +300,18 @@ export const header = `
                                 <div id="energy-power" class="sector-content active">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="/energy-utilities/renewable-energy.html">Renewable Energy & Backup Power Systems</a>
-                                            <a href="/energy-utilities/smart-grid.html">Smart Grid & Energy Management Solutions</a>
+                                            <a href="/energy-utilities/renewable-energy.html">Solar & Renewable Energy Systems <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Solar PV, Wind, Hybrid Power Plants)</span></a>
+                                            <a href="/energy-utilities/renewable-energy.html#ups">UPS & Backup Power Systems <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Online UPS, Generators, Battery Banks)</span></a>
+                                            <a href="/energy-utilities/renewable-energy.html#ev">EV Charging Infrastructure <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(AC/DC Chargers, Fleet Charging Solutions)</span></a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="/energy-utilities/smart-grid.html">Smart Grid & Energy Management <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(SCADA, EMS, Demand Response)</span></a>
+                                            <a href="/energy-utilities/smart-grid.html#bms">Building Energy Management Systems <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(BMS, HVAC Automation, Smart Controls)</span></a>
+                                            <a href="/energy-utilities/smart-grid.html#monitoring">Power Quality Monitoring <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Harmonic Analysis, Load Monitoring)</span></a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="/energy-utilities/renewable-energy.html#storage">Energy Storage Solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Lithium-ion, Flow Batteries, BESS)</span></a>
+                                            <a href="/energy-utilities/smart-grid.html#microgrid">Microgrid & Off-grid Solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Remote & Rural Electrification)</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -270,9 +320,16 @@ export const header = `
                                 <div id="energy-oil-gas" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="/energy-utilities/smart-fuel-pumps.html">Smart Fuel Pumps & Dispensing Systems</a>
-                                            <a href="/energy-utilities/tank-management.html">Tank Management & Monitoring Solutions</a>
-                                            <a href="/energy-utilities/pipeline-management.html">Pipeline & Asset Management Solutions</a>
+                                            <a href="/energy-utilities/smart-fuel-pumps.html">Smart Fuel Pumps & Dispensing Systems <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Automated Dispensers, Wet Stock Management)</span></a>
+                                            <a href="/energy-utilities/tank-management.html">Tank Management & Monitoring <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(ATG Systems, Level Sensors, Leak Detection)</span></a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="/energy-utilities/pipeline-management.html">Pipeline & Asset Management <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Integrity Monitoring, GIS Mapping)</span></a>
+                                            <a href="/energy-utilities/smart-fuel-pumps.html#pos">Forecourt & POS Management Systems <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Fuel Retail, Loyalty & Fleet Cards)</span></a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="/energy-utilities/pipeline-management.html#safety">HSE & Safety Management Solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Gas Detection, Emergency Shutdown)</span></a>
+                                            <a href="/energy-utilities/pipeline-management.html#remote">Remote Asset Monitoring & SCADA <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Real-time Field Operations Control)</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -281,8 +338,16 @@ export const header = `
                                 <div id="energy-utility" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="/energy-utilities/water-waste-management.html">Water & Waste Management Technologies</a>
-                                            <a href="/energy-utilities/smart-metering.html">Smart Metering & Billing Systems</a>
+                                            <a href="/energy-utilities/water-waste-management.html">Water & Waste Management Technologies <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(SCADA, AMR, Distribution Monitoring)</span></a>
+                                            <a href="/energy-utilities/water-waste-management.html#treatment">Water Treatment Plant Automation <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(PLC/SCADA, Chemical Dosing Systems)</span></a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="/energy-utilities/smart-metering.html">Smart Metering & Billing Systems <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(AMI, Prepaid Meters, Revenue Protection)</span></a>
+                                            <a href="/energy-utilities/smart-metering.html#mdm">Meter Data Management (MDM) <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Data Collection, Analytics, Reporting)</span></a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="/energy-utilities/water-waste-management.html#gis">GIS & Asset Management for Utilities <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Network Mapping, Spatial Analytics)</span></a>
+                                            <a href="/energy-utilities/smart-metering.html#iot">IoT-based Utility Monitoring <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Smart Sensors, Remote Readings)</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -312,9 +377,18 @@ export const header = `
                                 <div id="services-consultancy" class="sector-content active">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="/services/consultancy.html">Business Strategy</a>
-                                            <a href="/services/consultancy.html">Digital Transformation</a>
-                                            <a href="/services/consultancy.html">IT Consulting</a>
+                                            <a href="/services/consultancy.html">Business Strategy & Planning <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Growth Strategy, Market Entry, Roadmaps)</span></a>
+                                            <a href="/services/consultancy.html#digital">Digital Transformation Advisory <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Cloud Migration, Process Automation)</span></a>
+                                            <a href="/services/consultancy.html#it">IT Consulting & Architecture <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Infrastructure Design, Tech Stack Reviews)</span></a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="/services/consultancy.html#security">Cybersecurity Consulting <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Risk Assessment, Compliance, ISMS)</span></a>
+                                            <a href="/services/consultancy.html#vendor">Vendor & Technology Assessment <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(RFP Support, Proof of Concept)</span></a>
+                                            <a href="/services/consultancy.html#change">Change Management & Adoption <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(User Training, Rollout Planning)</span></a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="/services/consultancy.html#governance">IT Governance & Compliance <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(ISO 27001, COBIT, ITIL Frameworks)</span></a>
+                                            <a href="/services/consultancy.html#sourcing">Technology Sourcing & Procurement <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Hardware, Software, Licensing)</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -323,9 +397,16 @@ export const header = `
                                 <div id="services-rnd" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="/services/product-innovation.html">Product Innovation</a>
-                                            <a href="/services/market-research.html">Market Research</a>
-                                            <a href="/services/feasibility-studies.html">Feasibility Studies</a>
+                                            <a href="/services/product-innovation.html">Product Innovation & Prototyping <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Concept Development, MVP, Pilots)</span></a>
+                                            <a href="/services/market-research.html">Market Research & Analysis <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Competitive Intelligence, Surveys)</span></a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="/services/feasibility-studies.html">Feasibility Studies & POC <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Technical, Financial, Operational)</span></a>
+                                            <a href="/services/product-innovation.html#ai">AI & Emerging Technology Research <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Machine Learning, Computer Vision)</span></a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="/services/product-innovation.html#iot">IoT Solution Development & Testing <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Embedded Systems, Device Integration)</span></a>
+                                            <a href="/services/market-research.html#data">Data Analytics & Insights <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Dashboards, Predictive Modelling)</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -336,8 +417,16 @@ export const header = `
                                 <div id="services-install" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="/services/installation-maintenance.html">Hardware & Software Deployment</a>
-                                            <a href="/services/installation-maintenance.html">Annual Maintenance</a>
+                                            <a href="/services/installation-maintenance.html">Hardware & Software Deployment <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(On-site Setup, Configuration, Testing)</span></a>
+                                            <a href="/services/installation-maintenance.html#amc">Annual Maintenance Contracts (AMC) <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Preventive & Corrective Maintenance)</span></a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="/services/installation-maintenance.html#structured">Structured Cabling & Infrastructure <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Cat6, Fibre, Rack Installation)</span></a>
+                                            <a href="/services/installation-maintenance.html#migration">System Migration & Upgrades <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Legacy Modernization, Version Upgrades)</span></a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="/services/installation-maintenance.html#commissioning">Site Commissioning & Handover <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Acceptance Testing, Documentation)</span></a>
+                                            <a href="/services/installation-maintenance.html#spare">Spare Parts & Warranty Management <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(OEM Parts, Warranty Tracking)</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -346,9 +435,16 @@ export const header = `
                                 <div id="services-support" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="/services/support.html">Helpdesk</a>
-                                            <a href="/services/support.html">SLA-based Support</a>
-                                            <a href="/services/support.html">Remote Assistance</a>
+                                            <a href="/services/support.html">Helpdesk & Service Desk Solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(L1/L2/L3 Support, Ticketing Systems)</span></a>
+                                            <a href="/services/support.html#sla">SLA-based Support Contracts <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Response Time Guarantees, Reporting)</span></a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="/services/support.html#remote">Remote Monitoring & Support <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(VPN Access, Remote Diagnostics)</span></a>
+                                            <a href="/services/support.html#onsite">On-site Field Support & Dispatch <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Break-fix, Field Engineering)</span></a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="/services/support.html#noc">NOC & Managed Services <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(24/7 Monitoring, Incident Management)</span></a>
+                                            <a href="/services/support.html#warranty">Warranty & Extended Support <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(OEM Warranty Management)</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -357,8 +453,16 @@ export const header = `
                                 <div id="services-design" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="/services/system-design.html">Network Design</a>
-                                            <a href="/services/system-design.html">Security Optimization</a>
+                                            <a href="/services/system-design.html">Network Design & Architecture <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(LAN/WAN, Data Centre, Wireless)</span></a>
+                                            <a href="/services/system-design.html#security">Security Architecture & Optimization <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Firewall, IAM, Zero Trust Design)</span></a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="/services/system-design.html#performance">Performance Tuning & Optimization <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Capacity Planning, Bottleneck Analysis)</span></a>
+                                            <a href="/services/system-design.html#cloud">Cloud Solution Architecture <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(AWS, Azure, GCP Design Patterns)</span></a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="/services/system-design.html#dr">Disaster Recovery Planning <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(BCP, RTO/RPO Design, Failover)</span></a>
+                                            <a href="/services/system-design.html#audit">IT Infrastructure Audit <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Gap Analysis, Health Checks)</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -367,7 +471,16 @@ export const header = `
                                 <div id="services-paas" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="/services/paas.html">Project Management & Execution</a>
+                                            <a href="/services/paas.html">End-to-end Project Management <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Planning, Execution, Handover)</span></a>
+                                            <a href="/services/paas.html#agile">Agile & Scrum Delivery <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Sprint Planning, Backlog Management)</span></a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="/services/paas.html#pmo">PMO & Governance Services <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Reporting, Risk & Change Control)</span></a>
+                                            <a href="/services/paas.html#budget">Budget & Resource Management <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Cost Control, Resource Allocation)</span></a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="/services/paas.html#vendor">Vendor & Stakeholder Management <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Coordination, SLA Oversight)</span></a>
+                                            <a href="/services/paas.html#closeout">Project Closeout & Documentation <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Lessons Learned, Final Reports)</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -376,9 +489,16 @@ export const header = `
                                 <div id="services-custom" class="sector-content">
                                     <div class="dropdown-row">
                                         <div class="dropdown-column">
-                                            <a href="/services/custom-services.html">IT Training & Capacity Building</a>
-                                            <a href="/services/custom-services.html">Compliance & Risk Management Services</a>
-                                            <a href="/services/custom-services.html">Digital Marketing & Branding Solutions</a>
+                                            <a href="/services/custom-services.html">IT Training & Capacity Building <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Certifications, Workshops, e-Learning)</span></a>
+                                            <a href="/services/custom-services.html#compliance">Compliance & Risk Management <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(ISO, GDPR, SOC2 Compliance)</span></a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="/services/custom-services.html#marketing">Digital Marketing & Branding Solutions <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(SEO, Social Media, Web Design)</span></a>
+                                            <a href="/services/custom-services.html#outsourcing">IT Outsourcing & Staff Augmentation <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Managed Teams, Contract Staffing)</span></a>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <a href="/services/custom-services.html#bpo">Business Process Outsourcing (BPO) <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Back-office, Customer Operations)</span></a>
+                                            <a href="/services/custom-services.html#localization">Localization & Adaptation Services <br><span style="font-size: 0.85em; color: #666; font-weight: normal;">(Swahili, French, Arabic Support)</span></a>
                                         </div>
                                     </div>
                                 </div>

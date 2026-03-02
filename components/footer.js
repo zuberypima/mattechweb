@@ -14,7 +14,7 @@ export const footer = `
                 <ul>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#products">Services</a></li>
-                    <li><a href="#">Our Team</a></li>
+                    <li><a href="/our-team.html">Our Team</a></li>
                     <li><a href="#">Careers</a></li>
                 </ul>
                 <div style="margin-top: 20px;">
@@ -29,7 +29,7 @@ export const footer = `
                 <h4>Contact Info</h4>
                 <ul>
                     <li><i class="fas fa-envelope"></i> sales@mattech.co.tz</li>
-                    <li><i class="fas fa-phone"></i> +255 718 815 021</li>
+                    <li><i class="fas fa-phone"></i> +255 799 300 739</li>
                     <li><i class="fas fa-map-marker-alt"></i> Dar Es Salaam, Tanzania</li>
                 </ul>
             </div>

@@ -467,9 +467,7 @@ nav {
 .sector-container {
     display: flex;
     max-width: var(--max-width);
-    /* margin: 0 auto; */
-    min-height: 400px;
-    /* Ensure enough height */
+    align-items: flex-start;
 }
 
 /* Sidebar Tabs */
@@ -522,10 +520,8 @@ nav {
 /* Content Area */
 .sector-content-area {
     width: 80%;
-    /* Adjusted to match sidebar decrease */
-    padding: 40px;
+    padding: 30px 40px;
     background-color: #fff;
-    min-height: 400px;
 }
 
 .sector-content {
@@ -545,15 +541,14 @@ nav {
     padding: 0;
     gap: 20px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /* Force 4 columns like image */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 /* Override padding/margin from generic .dropdown-row if needed */
 .sector-content .dropdown-column {
     flex: none;
-    /* Disable flex sizing */
-    width: 50%;
+    /* Column width is now driven by the grid, not a fixed % */
+    width: auto;
 }
 
 /* Subsidiaries Style Grid */
@@ -1061,64 +1056,320 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Mobile Responsiveness */
+/* =========================================
+   MOBILE NAV — BAKHRESA-STYLE OVERLAY
+   ========================================= */
 @media (max-width: 960px) {
+
+    /* Hamburger button */
+    .hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 1.6rem;
+        color: var(--primary-color);
+        background: none;
+        border: none;
+        padding: 6px 10px;
+        border-radius: 4px;
+        z-index: 1100;
+        transition: color 0.2s ease;
+    }
+
+    .hamburger:hover {
+        color: var(--secondary-color);
+    }
+
+    /* Dark backdrop behind menu */
+    body.nav-open::after {
+        content: '';
+        position: fixed;
+        inset: 0;
+        top: var(--nav-height);
+        background: rgba(0, 0, 0, 0.45);
+        z-index: 998;
+        animation: fadeBackdrop 0.25s ease forwards;
+    }
+
+    @keyframes fadeBackdrop {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* ---- The Nav Panel ---- */
     .nav-links {
         display: none;
         flex-direction: column;
-        position: absolute;
+        position: fixed;
         top: var(--nav-height);
         left: 0;
+        right: 0;
         width: 100%;
-        background-color: var(--white);
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        padding: 20px 0;
+        background-color: #ffffff;
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+        padding: 8px 0 24px;
         align-items: flex-start;
-        max-height: 80vh;
+        max-height: calc(100vh - var(--nav-height));
         overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        z-index: 1000;
+        /* Smooth slide-in from top */
+        transform: translateY(-8px);
+        opacity: 0;
+        transition: transform 0.28s cubic-bezier(.4, 0, .2, 1), opacity 0.25s ease;
     }
 
     .nav-links.open {
         display: flex;
+        transform: translateY(0);
+        opacity: 1;
     }
 
+    /* Each list item fills the full width */
     .nav-links li {
         width: 100%;
+        height: auto;
         padding: 0;
+        display: block;
+        position: relative;
     }
 
-    .nav-links>li>a {
-        padding: 15px 20px;
-        justify-content: space-between;
-        border-bottom: 1px solid #f0f0f0;
-    }
-
-    /* Mobile Dropdown */
-    .dropdown-content,
-    .mega-content,
-    .product-content {
-        position: static;
+    /* Kill the desktop hover-bridge pseudo-element */
+    .nav-links li::after {
         display: none;
-        box-shadow: none;
-        border-top: none;
-        padding-left: 10px;
+    }
+
+    /* ---- Top-level Links ---- */
+    .nav-links>li>a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 28px;
+        font-size: 1.05rem;
+        font-weight: 600;
+        color: #444;
+        border-bottom: 1px solid #f0f2f4;
+        white-space: normal;
         width: 100%;
-        background-color: #f9f9f9;
-        animation: none;
+        letter-spacing: 0.01em;
+        transition: color 0.2s ease, background 0.2s ease;
     }
 
-    /* Note: In a real implementation we'd need JS to toggle these on click for mobile.
-       Where hover works on desktop, click/tap is needed on mobile. */
+    .nav-links>li>a i.fa-chevron-down {
+        font-size: 0.85rem;
+        color: #aaa;
+        transition: transform 0.3s ease, color 0.2s ease;
+        flex-shrink: 0;
+        margin-left: 10px;
+    }
+
+    .nav-links>li>a:hover {
+        color: var(--primary-color);
+        background-color: #f8fafa;
+    }
+
+    /* Active dropdown — highlight link + rotate chevron */
+    .nav-links>li.dropdown-active>a {
+        color: var(--primary-color);
+        background-color: #f2f8f8;
+        font-weight: 700;
+    }
+
+    .nav-links>li.dropdown-active>a i.fa-chevron-down {
+        transform: rotate(180deg);
+        color: var(--secondary-color);
+    }
+
+    /* ---- Contact button normalised ---- */
+    .nav-links>li>a.btn-contact {
+        margin: 18px 28px;
+        padding: 12px 24px;
+        border-radius: 50px;
+        width: calc(100% - 56px);
+        justify-content: center;
+        font-size: 0.95rem;
+    }
+
+    /* ---- Disable all desktop hover dropdowns on mobile ---- */
     .nav-links li:hover .dropdown-content,
-    .nav-links li:hover .mega-content {
-        display: block;
-        /* Basic fallback for hybrid devices, ideally handled by JS */
+    .nav-links li:hover .mattech-mega-content,
+    .nav-links li:hover .product-content,
+    .nav-links li:hover .sector-dropdown {
+        display: none;
     }
 
-    .hamburger {
+    /* ---- Dropdown base (hidden by default) ---- */
+    .dropdown-content,
+    .mattech-mega-content,
+    .product-content {
+        display: none;
+        position: static !important;
+        box-shadow: none !important;
+        border-top: none !important;
+        border-radius: 0;
+        padding: 0;
+        width: 100%;
+        background-color: #f7f9f9;
+        animation: none;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Show when JS adds .dropdown-active to parent li */
+    .nav-links li.dropdown-active>.dropdown-content,
+    .nav-links li.dropdown-active>.mattech-mega-content {
         display: block;
     }
 
+    /* ---- Mega menu items ---- */
+    .mattech-mega-menu {
+        position: static !important;
+        width: 100%;
+    }
+
+    /* ---- Sector container stacks vertically ---- */
+    .sector-container {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    /* Sector tabs become an accordion list */
+    .sector-tabs {
+        width: 100%;
+        border-right: none;
+        border-bottom: none;
+        flex-direction: column;
+        overflow-x: visible;
+        white-space: normal;
+        padding: 0;
+        background-color: #f7f9f9;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        display: block;
+    }
+
+    .sector-tabs::-webkit-scrollbar {
+        display: none;
+    }
+
+    .sector-tabs li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 28px 14px 44px;
+        border-radius: 0;
+        margin-right: 0;
+        background: #f7f9f9;
+        border: none;
+        border-bottom: 1px solid #eaeeee;
+        font-size: 0.92rem;
+        font-weight: 500;
+        color: #666;
+        width: 100%;
+        position: relative;
+        cursor: pointer;
+        transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .sector-tabs li::after {
+        content: '\f078';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        font-size: 0.75rem;
+        color: #bbb;
+        transition: transform 0.3s ease, color 0.2s ease;
+    }
+
+    .sector-tabs li:hover {
+        background: #edf4f4;
+        color: var(--primary-color);
+    }
+
+    .sector-tabs li.active {
+        background-color: #fff;
+        color: var(--secondary-color);
+        font-weight: 700;
+        border-bottom: 1px solid #eaeeee;
+    }
+
+    .sector-tabs li.active::after {
+        transform: rotate(180deg);
+        color: var(--secondary-color);
+    }
+
+    /* Sub-links area */
+    .sector-content-area {
+        width: 100%;
+        padding: 0;
+        min-height: auto;
+        background: #fff;
+    }
+
+    .dropdown-row {
+        flex-direction: column;
+        gap: 0;
+        padding: 6px 0;
+    }
+
+    .dropdown-column {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 0;
+        flex: none;
+    }
+
+    .dropdown-column h3 {
+        padding: 10px 28px 8px;
+        margin: 0;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: var(--secondary-color);
+        border-bottom: 1px solid #f0f2f4;
+    }
+
+    .sector-content .dropdown-row {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: unset;
+        padding: 0;
+        gap: 0;
+    }
+
+    .sector-content .dropdown-column {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    /* Level 3 links */
+    .sector-content .dropdown-column a,
+    .dropdown-column a {
+        display: block;
+        padding: 13px 28px 13px 56px;
+        font-size: 0.92rem;
+        font-weight: 400;
+        color: #555;
+        border-bottom: 1px solid #f0f2f4;
+        background: #fff;
+        transition: color 0.2s ease, padding-left 0.2s ease, background 0.2s ease;
+    }
+
+    .sector-content .dropdown-column a:hover,
+    .dropdown-column a:hover {
+        color: var(--primary-color);
+        background: #f7fbfb;
+        padding-left: 62px;
+        transform: none;
+    }
+
+    /* General responsive adjustments */
     .hero-content h1 {
         font-size: 2.5rem;
     }
@@ -1129,105 +1380,6 @@ footer {
 
     .stats-grid {
         grid-template-columns: 1fr 1fr;
-    }
-
-    /* Mobile Mega Menu Styles */
-    .mattech-mega-menu {
-        position: static !important;
-        /* Ensure it flows in document */
-        width: 100%;
-    }
-
-    .mattech-mega-content {
-        position: static;
-        display: none;
-        /* Hidden by default */
-        width: 100%;
-        box-shadow: none;
-        border-top: none;
-        padding: 0;
-        background-color: #f9f9f9;
-        animation: none;
-    }
-
-    .mattech-mega-menu.active .mattech-mega-content {
-        display: block;
-        /* Show when parent has .active */
-    }
-
-    .dropdown-row {
-        flex-direction: column;
-        gap: 0;
-        padding: 10px 0;
-    }
-
-    .dropdown-column {
-        width: 100%;
-        padding: 0 20px;
-        margin-bottom: 20px;
-    }
-
-    .dropdown-column h3 {
-        padding-left: 0;
-        margin-top: 10px;
-        font-size: 1rem;
-    }
-
-    /* Chevron rotation on active */
-    .mattech-mega-menu.active>a i {
-        transform: rotate(180deg);
-    }
-
-    /* Mobile Sector Menu (Tabbed) */
-    .sector-container {
-        flex-direction: column;
-        min-height: auto;
-    }
-
-    .sector-tabs {
-        width: 100%;
-        border-right: none;
-        border-bottom: 1px solid #eee;
-        flex-direction: row;
-        overflow-x: auto;
-        white-space: nowrap;
-        padding: 10px;
-        background-color: #f9f9f9;
-        /* Hide scrollbar */
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-    }
-
-    .sector-tabs::-webkit-scrollbar {
-        display: none;
-    }
-
-    .sector-tabs li {
-        padding: 8px 15px;
-        border-radius: 20px;
-        margin-right: 10px;
-        background: #fff;
-        border: 1px solid #eee;
-    }
-
-    .sector-tabs li.active {
-        background-color: var(--primary-color);
-        color: #fff;
-        border-color: var(--primary-color);
-    }
-
-    .sector-content-area {
-        width: 100%;
-        padding: 20px;
-        min-height: auto;
-    }
-
-    .sector-content .dropdown-row {
-        grid-template-columns: 1fr;
-    }
-
-    .sector-content .dropdown-column {
-        width: 100%;
     }
 }
 
